@@ -1,0 +1,629 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2025-09-16T20:03:00Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2107290543",
+        "amenity": "nightclub",
+        "floating": "yes",
+        "name": "Acapulco",
+        "name:en": "Acapulco",
+        "name:sr": "Акапулко",
+        "name:sr-Latn": "Akapulko"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4221779,
+          44.8295082
+        ]
+      },
+      "id": "node/2107290543"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2107290617",
+        "amenity": "nightclub",
+        "check_date": "2023-11-04",
+        "floating": "yes",
+        "int_name": "Otard",
+        "name": "Отард",
+        "name:sr": "Отард",
+        "name:sr-Latn": "Otard"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4219149,
+          44.829997
+        ]
+      },
+      "id": "node/2107290617"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4162190517",
+        "addr:housenumber": "18",
+        "addr:street": "Грачаничка",
+        "amenity": "nightclub",
+        "name": "Club Cinema"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.454751,
+          44.817303
+        ]
+      },
+      "id": "node/4162190517"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4162210289",
+        "addr:street": "Немањина",
+        "amenity": "nightclub",
+        "name": "Mr Stefan Braun"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4576378,
+          44.8069836
+        ]
+      },
+      "id": "node/4162210289"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4162210291",
+        "addr:housenumber": "26",
+        "addr:street": "Сарајевска",
+        "amenity": "nightclub",
+        "name": "Haaï",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4547655,
+          44.8036263
+        ]
+      },
+      "id": "node/4162210291"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4162210293",
+        "addr:city": "Београд",
+        "addr:housenumber": "73",
+        "addr:street": "Булевар краља Александра",
+        "amenity": "nightclub",
+        "email": "info@kst.org.rs",
+        "int_name": "Klub studenata tehnike",
+        "name": "Клуб студената технике",
+        "name:sr": "Клуб студената технике",
+        "name:sr-Latn": "Klub studenata tehnike",
+        "phone": "+381 11 3218391",
+        "start_date": "1954-2-24",
+        "website": "https://www.kst.org.rs/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4754811,
+          44.8059584
+        ]
+      },
+      "id": "node/4162210293"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4166557060",
+        "amenity": "nightclub",
+        "int_name": "Klub Kenozoik",
+        "name": "Клуб Кенозоик"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4658759,
+          44.8183495
+        ]
+      },
+      "id": "node/4166557060"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4166557061",
+        "amenity": "nightclub",
+        "name": "Showroom"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4651068,
+          44.8177141
+        ]
+      },
+      "id": "node/4166557061"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4166557065",
+        "amenity": "nightclub",
+        "name": "Beyond House"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4657251,
+          44.8178611
+        ]
+      },
+      "id": "node/4166557065"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4647249514",
+        "amenity": "nightclub",
+        "internet_access": "wlan",
+        "name": "Tarapana",
+        "name:en": "Tarapana",
+        "name:sr": "Тарапана",
+        "name:sr-Latn": "Tarapana",
+        "opening_hours": "We,Fr,Sa 23:00-04:00",
+        "phone": "381641200238"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.464984,
+          44.8093921
+        ]
+      },
+      "id": "node/4647249514"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5062482729",
+        "addr:housenumber": "10",
+        "addr:street": "Булевар војводе Бојовића",
+        "amenity": "nightclub",
+        "name": "Half",
+        "old_name": "Гаучоси",
+        "old_name:sr": "Гаучоси",
+        "old_name:sr-Latn": "Gaučosi"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4517759,
+          44.8287961
+        ]
+      },
+      "id": "node/5062482729"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5204938022",
+        "amenity": "nightclub",
+        "int_name": "Gradska Kafana",
+        "name": "Градска Кафана",
+        "name:en": "Gradska Kafana Beograd",
+        "opening_hours": "Tu-Sa 22:00-04:00; Su 22:00-06:00",
+        "phone": "+381 64 5711111",
+        "website": "https://gradskakafana.rs/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4392151,
+          44.8114189
+        ]
+      },
+      "id": "node/5204938022"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5229831910",
+        "addr:city": "Београд",
+        "addr:housenumber": "10",
+        "addr:postcode": "11000",
+        "addr:street": "Милоша Поцерца",
+        "amenity": "nightclub",
+        "name": "Cvetković",
+        "phone": "+381 64 1102634"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4547567,
+          44.8038114
+        ]
+      },
+      "id": "node/5229831910"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5260118422",
+        "addr:housenumber": "41",
+        "addr:street": "Жоржа Клемансоа",
+        "amenity": "nightclub",
+        "name": "Хангар",
+        "name:en": "Hangar",
+        "name:sr": "Хангар",
+        "name:sr-Latn": "Hangar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4754846,
+          44.8270225
+        ]
+      },
+      "id": "node/5260118422"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5284374321",
+        "amenity": "nightclub",
+        "int_name": "Klub Dionis",
+        "name": "Клуб Дионис",
+        "name:en": "Dionis Club",
+        "name:sr": "Клуб Дионис",
+        "name:sr-Latn": "Klub Dionis"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4502492,
+          44.8198046
+        ]
+      },
+      "id": "node/5284374321"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5302622223",
+        "addr:housenumber": "36",
+        "addr:street": "Поенкареова",
+        "amenity": "nightclub",
+        "int_name": "Dragstor",
+        "level": "1",
+        "name": "Драгстор",
+        "name:en": "Drugstore",
+        "name:sr": "Драгстор",
+        "name:sr-Latn": "Dragstor"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.489149,
+          44.8191035
+        ]
+      },
+      "id": "node/5302622223"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5420736622",
+        "amenity": "nightclub",
+        "check_date": "2025-09-01",
+        "name": "Hype",
+        "name:en": "Hype"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4513368,
+          44.8137936
+        ]
+      },
+      "id": "node/5420736622"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5878025185",
+        "amenity": "nightclub",
+        "check_date": "2025-09-05",
+        "contact:facebook": "https://www.facebook.com/barutanabeograd/",
+        "name": "Барутана",
+        "name:en": "Barutana",
+        "name:sr": "Барутана",
+        "name:sr-Latn": "Barutana"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.447602,
+          44.823667
+        ]
+      },
+      "id": "node/5878025185"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6204581612",
+        "amenity": "nightclub",
+        "int_name": "Brodarac",
+        "name": "Бродарац",
+        "name:sr": "Бродарац",
+        "name:sr-Latn": "Brodarac",
+        "opening_hours": "24/7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4435443,
+          44.8121861
+        ]
+      },
+      "id": "node/6204581612"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6700001679",
+        "amenity": "nightclub",
+        "name": "Red Box"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.449834,
+          44.8188439
+        ]
+      },
+      "id": "node/6700001679"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6832928187",
+        "amenity": "nightclub",
+        "name": "Velvet",
+        "opening_hours": "Mo-Th 16:00-24:00, Fr,Sa 16:00-02:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4603687,
+          44.8156442
+        ]
+      },
+      "id": "node/6832928187"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6832988986",
+        "amenity": "nightclub",
+        "int_name": "Secer",
+        "name": "Шећер",
+        "name:sr": "Шећер",
+        "name:sr-Latn": "Šećer"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4679741,
+          44.8144446
+        ]
+      },
+      "id": "node/6832988986"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6836085885",
+        "amenity": "nightclub",
+        "name": "Jazbina"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4830119,
+          44.8027982
+        ]
+      },
+      "id": "node/6836085885"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6836118286",
+        "amenity": "nightclub",
+        "int_name": "Kafana Limun zut",
+        "name": "Кафана Лимун жут",
+        "name:sr": "Кафана Лимун жут",
+        "name:sr-Latn": "Kafana Limun žut"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4905509,
+          44.8021431
+        ]
+      },
+      "id": "node/6836118286"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6854380661",
+        "amenity": "nightclub",
+        "name": "Soul Society"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4685621,
+          44.8182156
+        ]
+      },
+      "id": "node/6854380661"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9001824859",
+        "amenity": "nightclub",
+        "name": "Shine"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4072912,
+          44.7863436
+        ]
+      },
+      "id": "node/9001824859"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11331170476",
+        "amenity": "nightclub",
+        "name": "Zappa baza"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4480387,
+          44.8206714
+        ]
+      },
+      "id": "node/11331170476"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11445995855",
+        "addr:housenumber": "26",
+        "addr:street": "Сарајевска",
+        "amenity": "nightclub",
+        "check_date": "2023-12-23",
+        "contact:facebook": "https://www.facebook.com/malascena011",
+        "contact:instagram": "https://www.instagram.com/malascena011",
+        "name": "Mala Scena 011",
+        "phone": "+381 61 1302077",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4547458,
+          44.8036023
+        ]
+      },
+      "id": "node/11445995855"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11547080445",
+        "amenity": "nightclub",
+        "int_name": "Ulica",
+        "name": "Улица"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4544164,
+          44.8164994
+        ]
+      },
+      "id": "node/11547080445"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11920106007",
+        "amenity": "nightclub",
+        "name": "Kafana Bulevar",
+        "phone": "+381 61 3080560"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4852514,
+          44.8016261
+        ]
+      },
+      "id": "node/11920106007"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12532166800",
+        "amenity": "nightclub",
+        "name": "Fest"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4108101,
+          44.8402053
+        ]
+      },
+      "id": "node/12532166800"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12979725678",
+        "amenity": "nightclub",
+        "check_date": "2025-07-05",
+        "level": "-1",
+        "name": "Under"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4783787,
+          44.8058266
+        ]
+      },
+      "id": "node/12979725678"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13111157561",
+        "amenity": "nightclub",
+        "check_date": "2025-09-01",
+        "name": "20/44"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4512438,
+          44.8140798
+        ]
+      },
+      "id": "node/13111157561"
+    }
+  ]
+}

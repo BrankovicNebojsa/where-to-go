@@ -1,0 +1,757 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2025-09-16T19:57:00Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2435227524",
+        "amenity": "library",
+        "check_date": "2024-03-01",
+        "int_name": "Laza Kostic",
+        "name": "Лаза Костић",
+        "name:sr": "Лаза Костић",
+        "name:sr-Latn": "Laza Kostić",
+        "wikidata": "Q54860560",
+        "wikipedia": "sr:Библиотека „Лаза Костић” (Чукарица)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4177203,
+          44.7834415
+        ]
+      },
+      "id": "node/2435227524"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2435248395",
+        "amenity": "library",
+        "int_name": "Prometej",
+        "name": "Прометеј",
+        "name:sr": "Прометеј",
+        "name:sr-Latn": "Prometej"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4143291,
+          44.7742402
+        ]
+      },
+      "id": "node/2435248395"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2732380027",
+        "addr:city": "Београд",
+        "addr:housenumber": "261",
+        "addr:postcode": "11000",
+        "addr:street": "Војводе Степе",
+        "amenity": "library",
+        "height": "3 m",
+        "int_name": "Biblioteka „Filip Visnjic”",
+        "name": "Библиотека „Филип Вишњић”",
+        "name:sr": "Библиотека „Филип Вишњић”",
+        "name:sr-Latn": "Biblioteka „Filip Višnjić”",
+        "operator": "Библиотека \"Доситеј Обрадовић\"",
+        "phone": "+381112466780",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4790293,
+          44.7695807
+        ]
+      },
+      "id": "node/2732380027"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3888040523",
+        "addr:city": "Београд",
+        "addr:housenumber": "20",
+        "addr:postcode": "11000",
+        "addr:street": "Вељка Дугошевића",
+        "amenity": "library",
+        "int_name": "Biblioteka „Stanislav Vinaver”",
+        "name": "Библиотека „Станислав Винавер”",
+        "name:en": "Stanislav Vinaver Library",
+        "name:sr": "Библиотека „Станислав Винавер”",
+        "name:sr-Latn": "Biblioteka „Stanislav Vinaver”",
+        "opening_hours": "Mo-Fr 08:00-20:00, Sa 08:00-14:00",
+        "phone": "+381 11 2423766",
+        "website": "https://www.bgb.rs/index.php/2011-11-14-21-25-03"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4944719,
+          44.8054818
+        ]
+      },
+      "id": "node/3888040523"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3984468413",
+        "addr:city": "Београд",
+        "addr:housenumber": "3",
+        "addr:postcode": "11000",
+        "addr:street": "Вишка",
+        "amenity": "library",
+        "email": "biblioteka.vracar@gmail.com",
+        "int_name": "Biblioteka Petar Kocic",
+        "name": "Библиотека Петар Кочић",
+        "name:sr": "Библиотека Петар Кочић",
+        "name:sr-Latn": "Biblioteka Petar Kočić",
+        "opening_hours": "Mo-Fr 08:00-10:00, 10:30-16:30, 17:00-20:00; Sa 08:00-10:00, 10:30-14:00; Su off",
+        "phone": "+381 11 2430250",
+        "smoking": "no",
+        "website": "https://bgb.rs/sr/biblioteke/vracar/",
+        "wikidata": "Q61133385",
+        "wikipedia": "sr:Библиотека „Петар Кочић” (Врачар)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4749338,
+          44.8009939
+        ]
+      },
+      "id": "node/3984468413"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4307759791",
+        "addr:street": "Приморска",
+        "amenity": "library",
+        "int_name": "Milutin Bojic",
+        "internet_access": "wlan",
+        "name": "Милутин Бојић",
+        "name:sr": "Милутин Бојић",
+        "name:sr-Latn": "Milutin Bojić"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4820668,
+          44.8113327
+        ]
+      },
+      "id": "node/4307759791"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5851188795",
+        "amenity": "library",
+        "description": "Огранак библиотеке Свети Сава",
+        "description:sr": "Огранак библиотеке Свети Сава",
+        "description:sr-Latn": "Ogranak biblioteke Sveti Sava",
+        "int_name": "David Albahari",
+        "name": "Давид Албахари",
+        "name:sr": "Давид Албахари",
+        "name:sr-Latn": "David Albahari",
+        "operator": "Biblioteka grada Beograda"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.416103,
+          44.8381341
+        ]
+      },
+      "id": "node/5851188795"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6060771837",
+        "addr:housenumber": "22",
+        "addr:street": "Македонска",
+        "amenity": "library",
+        "email": "beograd@americancorners.rs",
+        "int_name": "Americki kutak Beograd",
+        "level": "1",
+        "name": "Амерички кутак Београд",
+        "name:en": "American Corner Belgrade",
+        "name:sr": "Амерички кутак Београд",
+        "name:sr-Latn": "Američki kutak Beograd",
+        "opening_hours": "Mo-Fr 10:00-20:00; Sa 10:00-14:00",
+        "operator": "Embassy of the United States - Serbia",
+        "phone": "+381 11 3227 694",
+        "website": "https://linktr.ee/americanspacesserbia?utm_source=linktree_profile_share&ltsid=2e4b29bc-6be1-4612-a8f9-614b3e384627",
+        "wikidata": "Q110045227",
+        "wikipedia": "sr:Амерички кутак у Београду"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4629669,
+          44.8155568
+        ]
+      },
+      "id": "node/6060771837"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6247735889",
+        "amenity": "library",
+        "int_name": "Biblioteka „Dositej Obradovic”",
+        "name": "Библиотека „Доситеј Обрадовић”",
+        "name:sr": "Библиотека „Доситеј Обрадовић”",
+        "name:sr-Latn": "Biblioteka „Dositej Obradović”",
+        "wikidata": "Q133491071",
+        "wikipedia": "sr:Библиотека „Доситеј Обрадовић” (Вождовац)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4934072,
+          44.7845974
+        ]
+      },
+      "id": "node/6247735889"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6295661623",
+        "amenity": "library",
+        "int_name": "Decja biblioteka „Dragan Lukic”",
+        "name": "Дечја библиотека „Драган Лукић”",
+        "name:hr": "Dječja knjižnica „Dragan Lukić“",
+        "name:sr": "Дечја библиотека „Драган Лукић”",
+        "name:sr-Latn": "Dečja biblioteka „Dragan Lukić”",
+        "opening_hours": "Mo-Fr 08:00-19:00; Sa 09:00-14:00",
+        "phone": "+381 11 2620867",
+        "wikidata": "Q61133566",
+        "wikipedia": "sr:Дечија библиотека „Драган Лукић”"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4571374,
+          44.8202856
+        ]
+      },
+      "id": "node/6295661623"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6295661627",
+        "addr:housenumber": "17",
+        "addr:street": "Студентски трг",
+        "amenity": "library",
+        "email": "periodika@bgb.rs",
+        "int_name": "Fond periodike Biblioteke grada Beograda",
+        "name": "Фонд периодике Библиотеке града Београда",
+        "name:hr": "Fond periodike Knjižnice grada Beograda",
+        "name:sr": "Фонд периодике Библиотеке града Београда",
+        "name:sr-Latn": "Fond periodike Biblioteke grada Beograda",
+        "opening_hours": "Mo-Fr 08:00-20:00; Sa 08:00-14:00",
+        "phone": "+381 11 2620953",
+        "website": "https://www.bgb.rs/index.php/2011-11-14-20-58-35/p-ri-di/",
+        "wikidata": "Q20438160",
+        "wikipedia": "sr:Фонд периодике Библиотеке града Београда"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4568771,
+          44.8201308
+        ]
+      },
+      "id": "node/6295661627"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6352366956",
+        "addr:city": "Београд",
+        "addr:housenumber": "97",
+        "addr:street": "Браће Јерковић",
+        "amenity": "library",
+        "int_name": "Biblioteka „Milutin Uskokovic”",
+        "name": "Библиотека „Милутин Ускоковић”",
+        "name:sr": "Библиотека „Милутин Ускоковић”",
+        "operator": "Biblioteka grada Beograda",
+        "phone": "+381113981856"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4901368,
+          44.7693872
+        ]
+      },
+      "id": "node/6352366956"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6367264793",
+        "addr:housenumber": "28а",
+        "addr:street": "Рајка Митића",
+        "amenity": "library",
+        "int_name": "Biblioteka „Veljko Petrovic”",
+        "name": "Библиотека „Вељко Петровић”",
+        "name:sr": "Библиотека „Вељко Петровић”",
+        "operator": "Библиотека \"Исидора Секулић\""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4661209,
+          44.776322
+        ]
+      },
+      "id": "node/6367264793"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6367303945",
+        "addr:housenumber": "3",
+        "addr:street": "Генерала Љубомира Милића",
+        "amenity": "library",
+        "int_name": "Biblioteka „Milorad Panic Surep”",
+        "name": "Библиотека „Милорад Панић Суреп”",
+        "name:sr": "Библиотека „Милорад Панић Суреп”",
+        "operator": "Библиотека \"Доситеј Обрадовић\""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4899829,
+          44.7587429
+        ]
+      },
+      "id": "node/6367303945"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6367303946",
+        "addr:city": "Београд",
+        "addr:housenumber": "112",
+        "addr:postcode": "11000",
+        "addr:street": "Војводе Степе",
+        "amenity": "library",
+        "int_name": "Biblioteka „Karadjordje”",
+        "internet_access": "no",
+        "name": "Библиотека „Карађорђе”",
+        "name:sr": "Библиотека „Карађорђе”",
+        "name:sr-Latn": "Biblioteka „Karađorđe”",
+        "opening_hours": "Mo-Sa 08:00-19:00; Su 08:00-14:00",
+        "operator": "Библиотека \"Доситеј Обрадовић\"",
+        "operator:type": "public",
+        "phone": "+381 11 2491 557",
+        "website": "https://www.bgb.rs/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4730213,
+          44.7790281
+        ]
+      },
+      "id": "node/6367303946"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6367898078",
+        "addr:housenumber": "298",
+        "addr:street": "Булевар краља Александра",
+        "amenity": "library",
+        "check_date": "2024-03-17",
+        "int_name": "Biblioteka „Branko Miljkovic”",
+        "name": "Библиотека „Бранко Миљковић”",
+        "name:en": "Branko Miljković Library",
+        "name:sr": "Библиотека „Бранко Миљковић”",
+        "name:sr-Latn": "Biblioteka „Branko Miljković”",
+        "opening_hours": "Mo-Fr 08:00-19:00; Sa 08:00-14:00",
+        "phone": "+381 11 2411563"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4978378,
+          44.7957972
+        ]
+      },
+      "id": "node/6367898078"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7124031431",
+        "addr:city": "Београд",
+        "addr:housenumber": "2",
+        "addr:postcode": "11000",
+        "addr:street": "Пастерова",
+        "amenity": "library",
+        "int_name": "Biblioteka i citaonica Medicinskog fakulteta",
+        "name": "Библиотека и читаоница Медицинског факултета",
+        "name:sr": "Библиотека и читаоница Медицинског факултета",
+        "name:sr-Latn": "Biblioteka i čitaonica Medicinskog fakulteta",
+        "opening_hours": "Mo-Fr 08:00-22:00; Sa-Su 09:00-17:00",
+        "phone": "+381 11 3636300"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4609948,
+          44.7993367
+        ]
+      },
+      "id": "node/7124031431"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7248637309",
+        "addr:city": "Београд",
+        "addr:housenumber": "194",
+        "addr:postcode": "11050",
+        "addr:street": "Устаничка",
+        "amenity": "library",
+        "name": "Biblioteka Jefimija",
+        "opening_hours": "Mo-Fr 08:00-20:00; Sa 08:00-14:00",
+        "phone": "+381 11 2893014"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.507466,
+          44.782266
+        ]
+      },
+      "id": "node/7248637309"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7874557004",
+        "addr:city": "Београд",
+        "addr:housenumber": "44",
+        "addr:postcode": "11000",
+        "addr:street": "Мике Аласа",
+        "amenity": "library",
+        "name": "Biblioteka Jovan Popović",
+        "opening_hours": "Mo-Fr 08:00-19:00; Sa 08:00-14:00",
+        "phone": "+381 11 2187338"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4643577,
+          44.8264329
+        ]
+      },
+      "id": "node/7874557004"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8613304869",
+        "amenity": "library",
+        "int_name": "Biblioteka grada Beograda - Biblioteka Vuk Karadzic",
+        "name": "Библиотека града Београда - Библиотека Вук Караџић",
+        "name:sr": "Библиотека града Београда - Библиотека Вук Караџић",
+        "name:sr-Latn": "Biblioteka grada Beograda - Biblioteka Vuk Karadžić",
+        "operator": "Библиотека града Београда",
+        "operator:type": "government",
+        "wikidata": "Q133489943",
+        "wikipedia": "sr:Библиотека „Вук Караџић” (Нови Београд)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4009014,
+          44.8265538
+        ]
+      },
+      "id": "node/8613304869"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8614679082",
+        "addr:city": "Београд",
+        "addr:housenumber": "2a",
+        "addr:postcode": "11000",
+        "addr:street": "Ћирила и Методија",
+        "amenity": "library",
+        "int_name": "Biblioteka „Vuk Karadzic”",
+        "name": "Библиотека „Вук Караџић”",
+        "name:sr": "Библиотека „Вук Караџић”",
+        "name:sr-Latn": "Biblioteka „Vuk Karadžić”",
+        "phone": "+381 11 2422003",
+        "website": "https://www.bgb.rs/",
+        "wikidata": "Q56880963",
+        "wikimedia_commons": "Category:Biblioteka \"Vuk Karadžić\" (Zvezdara)",
+        "wikipedia": "sr:Библиотека „Вук Караџић” (Звездара)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.481232,
+          44.8038847
+        ]
+      },
+      "id": "node/8614679082"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9091314039",
+        "amenity": "library",
+        "contact:instagram": "https://www.instagram.com/biblioteka_grada_beograda/",
+        "int_name": "Biblioteka grada Beograda",
+        "name": "Библиотека града Београда",
+        "opening_hours": "Mo,Tu 13:00-19:00; We-Fr 08:00-14:00",
+        "outdoor_seating": "no",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4676085,
+          44.8065522
+        ]
+      },
+      "id": "node/9091314039"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10310785975",
+        "addr:city": "Београд",
+        "addr:housenumber": "221",
+        "addr:postcode": "11070",
+        "addr:street": "Јурија Гагарина",
+        "amenity": "library",
+        "int_name": "Ogranak „Sava”",
+        "name": "Огранак „Сава”",
+        "name:sr": "Огранак „Сава”",
+        "name:sr-Latn": "Ogranak „Sava”",
+        "opening_hours": "Mo-Fr 08:00-19:00; Sa 08:00-14:00",
+        "operator": "Библиотека Града Београда",
+        "operator:sr-Latn": "Biblioteka Grada Beograda",
+        "operator:type": "public",
+        "phone": "+381 11 6164878"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.3773321,
+          44.7976733
+        ]
+      },
+      "id": "node/10310785975"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11833448714",
+        "addr:housenumber": "5",
+        "addr:street": "Илије Гарашанина",
+        "amenity": "library",
+        "email": "biblioteka@milutinbojic.org.rs",
+        "int_name": "Biblioteka „Milutin Bojic”",
+        "name": "Библиотека „Милутин Бојић”",
+        "name:en": "Public Library \"Milutin Bojić\"",
+        "name:ru": "Библиотека \"Милутин Боич\"",
+        "name:sr": "Библиотека „Милутин Бојић”",
+        "name:sr-Latn": "Biblioteka „Milutin Bojić”",
+        "name:zh": "贝尔格莱德“米卢廷·波伊奇”图书馆",
+        "opening_hours": "Mo-Fr 08:00-17:00; Sa 08:00-14:00",
+        "website": "https://milutinbojic.org.rs/",
+        "wikidata": "Q16507003",
+        "wikipedia": "sr:Библиотека „Милутин Бојић” (Палилула)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4713255,
+          44.8122285
+        ]
+      },
+      "id": "node/11833448714"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11833458251",
+        "addr:housenumber": "19",
+        "addr:street": "Браће Југовића",
+        "amenity": "library",
+        "int_name": "Centralna biblioteka Vojske Srbije",
+        "name": "Централна библиотека Војске Србије",
+        "name:en": "Central Library of Serbian Army",
+        "name:sr": "Централна библиотека Војске Србије",
+        "name:sr-Latn": "Centralna biblioteka Vojske Srbije",
+        "phone": "+381 11 3234 712",
+        "wikidata": "Q12761006",
+        "wikipedia": "sr:Централна библиотека Војске Југославије"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4623147,
+          44.8171335
+        ]
+      },
+      "id": "node/11833458251"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11936398949",
+        "amenity": "library",
+        "check_date": "2024-05-27",
+        "description": "Библиотека града Београда, Библиотека \"Вук Караџић\", Библиотека \"Меша Селимовић\"",
+        "int_name": "Biblioteka grada Beograda",
+        "name": "Библиотека града Београда",
+        "opening_hours": "Mo-Fr 08:00-10:00,10:30-16:00,16:30-19:00; Sa 08:00-14:00",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.3948277,
+          44.8012492
+        ]
+      },
+      "id": "node/11936398949"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12110758814",
+        "amenity": "library",
+        "check_date": "2024-08-14",
+        "opening_hours": "Mo-Fr 10:00-15:00; Sa-Su off",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4680728,
+          44.8125595
+        ]
+      },
+      "id": "node/12110758814"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12844319091",
+        "amenity": "library",
+        "int_name": "Biblioteka grada Beograda",
+        "name": "Библиотека града Београда",
+        "name:de": "Stadtbibliothek Belgrad",
+        "name:en": "Belgrade City Library",
+        "name:sr": "Библиотека града Београда",
+        "name:sr-Latn": "Biblioteka grada Beograda",
+        "opening_hours": "Mo-Fr 08:00-20:00; Sa 08:00-14:00",
+        "website": "https://www.bgb.rs/",
+        "wheelchair": "limited",
+        "wikidata": "Q12748910",
+        "wikimedia_commons": "Category:Belgrade City Library",
+        "wikipedia": "sr:Библиотека града Београда"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4534502,
+          44.8200202
+        ]
+      },
+      "id": "node/12844319091"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12856482912",
+        "amenity": "library",
+        "int_name": "Biblioteka za slepe „Dr Milan Budimir”",
+        "name": "Библиотека за слепе „Др Милан Будимир”",
+        "name:sr": "Библиотека за слепе „Др Милан Будимир”",
+        "name:sr-Latn": "Biblioteka za slepe „Dr Milan Budimir”",
+        "wikidata": "Q133448253",
+        "wikipedia": "sr:Библиотека за слепе „Др Милан Будимир”"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4574401,
+          44.827347
+        ]
+      },
+      "id": "node/12856482912"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12916929354",
+        "addr:floor": "2",
+        "addr:housenumber": "1",
+        "addr:street": "Змај Јовина",
+        "amenity": "library",
+        "int_name": "Zavicajno odeljenje Biblioteke grada Beograda",
+        "level": "2",
+        "name": "Завичајно одељење Библиотеке града Београда",
+        "name:sr": "Завичајно одељење Библиотеке града Београда",
+        "name:sr-Latn": "Zavičajno odeljenje Biblioteke grada Beograda",
+        "wikidata": "Q25458988",
+        "wikipedia": "sr:Завичајно одељење Библиотеке града Београда"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4566876,
+          44.8166394
+        ]
+      },
+      "id": "node/12916929354"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12922013948",
+        "addr:housenumber": "40",
+        "addr:street": "Гаврила Принципа",
+        "amenity": "library",
+        "int_name": "Biblioteka „Isidora Sekulic” - Ogranak „Bora Stankovic”",
+        "name": "Библиотека „Исидора Секулић” - Огранак „Бора Станковић”",
+        "name:sr": "Библиотека „Исидора Секулић” - Огранак „Бора Станковић”",
+        "name:sr-Latn": "Biblioteka „Isidora Sekulić” - Ogranak „Bora Stanković”",
+        "wikidata": "Q133503735",
+        "wikipedia": "sr:Библиотека „Исидора Секулић” (Савски венац)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4564066,
+          44.8111493
+        ]
+      },
+      "id": "node/12922013948"
+    }
+  ]
+}

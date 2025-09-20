@@ -1,0 +1,503 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2025-09-16T20:07:15Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4709013289",
+        "amenity": "casino",
+        "name": "Slots"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4128814,
+          44.8285082
+        ]
+      },
+      "id": "node/4709013289"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5396570608",
+        "amenity": "casino",
+        "name": "Admiral Club",
+        "opening_hours": "24/7"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.3739586,
+          44.8036835
+        ]
+      },
+      "id": "node/5396570608"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5846281327",
+        "amenity": "casino",
+        "int_name": "Admiral Klub",
+        "name": "Адмирал Клуб",
+        "name:sr": "Адмирал Клуб",
+        "name:sr-Latn": "Admiral Klub",
+        "opening_hours": "Mo-Su 09:00-03:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.455975,
+          44.8203574
+        ]
+      },
+      "id": "node/5846281327"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5846547692",
+        "amenity": "casino"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4673033,
+          44.7864578
+        ]
+      },
+      "id": "node/5846547692"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6718636808",
+        "addr:housenumber": "93A",
+        "addr:street": "Нехруова",
+        "amenity": "casino",
+        "int_name": "Eldorado",
+        "name": "Елдорадо",
+        "name:sr": "Елдорадо",
+        "name:sr-Latn": "Eldorado"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.3817369,
+          44.8067312
+        ]
+      },
+      "id": "node/6718636808"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6774932093",
+        "amenity": "casino",
+        "name:en": "Maxbet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.5013247,
+          44.7889048
+        ]
+      },
+      "id": "node/6774932093"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6774938695",
+        "amenity": "casino",
+        "name": "Admiral klub"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4844779,
+          44.7979867
+        ]
+      },
+      "id": "node/6774938695"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6776805385",
+        "amenity": "casino",
+        "name": "Maxbet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.455123,
+          44.8202407
+        ]
+      },
+      "id": "node/6776805385"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6780759085",
+        "addr:housenumber": "1",
+        "addr:postcode": "11000",
+        "addr:street": "Патријарха Варнаве",
+        "amenity": "casino",
+        "internet_access": "wlan",
+        "name": "Grant Slot",
+        "opening_hours": "24/7",
+        "website": "https://grandslotclub.rs/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4746595,
+          44.7969055
+        ]
+      },
+      "id": "node/6780759085"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7090309585",
+        "amenity": "casino",
+        "name": "Bet 365"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.3868043,
+          44.8209386
+        ]
+      },
+      "id": "node/7090309585"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7682222985",
+        "amenity": "casino",
+        "check_date": "2024-09-11",
+        "internet_access": "wlan",
+        "name": "Grand Slot Club",
+        "opening_hours": "24/7",
+        "phone": "+381658852673",
+        "website": "https://grandslotclub.rs/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4177808,
+          44.7833261
+        ]
+      },
+      "id": "node/7682222985"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7682222986",
+        "addr:housenumber": "54",
+        "addr:postcode": "11000",
+        "addr:street": "Београдска",
+        "amenity": "casino",
+        "internet_access": "wlan",
+        "name": "Grand slot club",
+        "opening_hours": "24/7",
+        "phone": "+381658852614",
+        "website": "https://grandslotclub.rs/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4705134,
+          44.8060446
+        ]
+      },
+      "id": "node/7682222986"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7682223085",
+        "addr:housenumber": "1-3",
+        "addr:postcode": "11000",
+        "addr:street": "Јована Рајића",
+        "amenity": "casino",
+        "check_date": "2025-08-31",
+        "internet_access": "wlan",
+        "name": "Grand slot club",
+        "opening_hours": "24/7",
+        "phone": "0381658852668",
+        "website": "https://grandslotclub.rs/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4872093,
+          44.7971665
+        ]
+      },
+      "id": "node/7682223085"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7728574010",
+        "addr:city": "Београд",
+        "addr:floor": "G",
+        "addr:housenumber": "22k",
+        "addr:postcode": "11070",
+        "addr:street": "Јурија Гагарина",
+        "amenity": "casino",
+        "check_date": "2025-04-03",
+        "level": "0",
+        "name": "Grand slot",
+        "opening_hours": "09:00-04:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.399572,
+          44.8053977
+        ]
+      },
+      "id": "node/7728574010"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9091313041",
+        "amenity": "casino",
+        "name": "Merkur"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4854383,
+          44.7975853
+        ]
+      },
+      "id": "node/9091313041"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9091313063",
+        "amenity": "casino",
+        "name": "Soccer bet",
+        "name:en": "Socceebet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4625173,
+          44.816241
+        ]
+      },
+      "id": "node/9091313063"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9091313142",
+        "amenity": "casino",
+        "check_date:opening_hours": "2025-03-04",
+        "name": "Balkan Bet",
+        "opening_hours": "Mo-Su 09:00-03:00",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4728366,
+          44.8062905
+        ]
+      },
+      "id": "node/9091313142"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9091313620",
+        "amenity": "casino",
+        "name:en": "Maxbet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4849252,
+          44.7981476
+        ]
+      },
+      "id": "node/9091313620"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9091313621",
+        "amenity": "casino",
+        "name:en": "Winwin"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4894451,
+          44.7962969
+        ]
+      },
+      "id": "node/9091313621"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9091313728",
+        "amenity": "casino",
+        "check_date": "2024-06-15",
+        "name:en": "Soccerbet",
+        "opening_hours": "09:00-23:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4707162,
+          44.8019867
+        ]
+      },
+      "id": "node/9091313728"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9091314034",
+        "amenity": "casino",
+        "name:en": "Maxbet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4148006,
+          44.8440573
+        ]
+      },
+      "id": "node/9091314034"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9985993071",
+        "addr:housenumber": "3a",
+        "addr:street": "Јапанска",
+        "amenity": "casino",
+        "int_name": "Admiral klub",
+        "level": "0",
+        "min_age": "18",
+        "name": "Адмирал клуб",
+        "name:sr": "Адмирал клуб",
+        "name:sr-Latn": "Admiral klub",
+        "opening_hours": "Mo-Su 10:00-04:00",
+        "phone": "+381 60 6233624",
+        "website": "https://admiralclub.rs"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.3834125,
+          44.807076
+        ]
+      },
+      "id": "node/9985993071"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11446216248",
+        "amenity": "casino",
+        "check_date": "2023-12-23",
+        "description": "Slot club",
+        "name": "MaxBet"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4730128,
+          44.8009456
+        ]
+      },
+      "id": "node/11446216248"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11739208914",
+        "addr:city": "Београд",
+        "addr:housenumber": "29",
+        "addr:postcode": "11000",
+        "addr:street": "Булевар ослобођења",
+        "amenity": "casino",
+        "check_date": "2024-03-17",
+        "contact:facebook": "https://www.facebook.com/grandslotclub.rs/",
+        "contact:instagram": "https://www.instagram.com/grandslotclub/",
+        "email": "info@grandslotclub.rs",
+        "min_age": "18",
+        "name": "Grand Slot",
+        "opening_hours": "09:00-01:00",
+        "pets_allowed": "yes",
+        "phone": "+381 800 110011",
+        "smoking": "yes",
+        "website": "https://grandslotclub.rs/",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4660318,
+          44.7997374
+        ]
+      },
+      "id": "node/11739208914"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11745364392",
+        "amenity": "casino",
+        "check_date": "2024-03-19",
+        "name": "Planetwin365"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.5157056,
+          44.785594
+        ]
+      },
+      "id": "node/11745364392"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12265996642",
+        "amenity": "casino",
+        "check_date": "2024-10-14",
+        "name": "Balkan Bet",
+        "opening_hours": "09:00-03:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4786692,
+          44.7932894
+        ]
+      },
+      "id": "node/12265996642"
+    }
+  ]
+}

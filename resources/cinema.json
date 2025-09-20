@@ -1,0 +1,331 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2025-09-16T20:03:00Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/462109327",
+        "addr:housenumber": "5",
+        "addr:street": "Тургењева",
+        "amenity": "cinema",
+        "name": "Roda Cineplex",
+        "name:sr": "Шумадија",
+        "name:sr-Latn": "Šumadija"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4174735,
+          44.783588
+        ]
+      },
+      "id": "node/462109327"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/928292093",
+        "addr:housenumber": "7",
+        "addr:street": "Кнеза Милоша",
+        "amenity": "cinema",
+        "check_date": "2025-08-06",
+        "level": "0",
+        "name": "Tuckwood Cineplex",
+        "opening_hours": "Mo-Fr 15:00-22:00; Sa,Su 12:00-22:00",
+        "payment:cash": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "website": "https://www.tuck.rs/",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4652825,
+          44.8096302
+        ]
+      },
+      "id": "node/928292093"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/997064127",
+        "amenity": "cinema",
+        "int_name": "Bioskop Roda",
+        "name": "Биоскоп Рода",
+        "name:en": "Roda Cinema",
+        "name:sr": "Биоскоп Рода",
+        "name:sr-Latn": "Bioskop Roda"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4147204,
+          44.773945
+        ]
+      },
+      "id": "node/997064127"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4984273625",
+        "amenity": "cinema",
+        "contact:facebook": "https://www.facebook.com/novibioskopzvezda/",
+        "int_name": "Novi bioskop Zvezda",
+        "name": "Нови биоскоп Звезда",
+        "name:en": "New Cinema Zvezda",
+        "name:sr": "Нови биоскоп Звезда",
+        "name:sr-Latn": "Novi bioskop Zvezda",
+        "wikidata": "Q105906524",
+        "wikipedia": "sr:Биоскоп Звезда"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4611715,
+          44.8111885
+        ]
+      },
+      "id": "node/4984273625"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6060747670",
+        "addr:housenumber": "28",
+        "addr:street": "Немањина",
+        "amenity": "cinema",
+        "int_name": "Akademija 28",
+        "name": "Академија 28",
+        "name:sr": "Академија 28",
+        "name:sr-Latn": "Akademija 28",
+        "opening_hours": "Mo-Fr 08:00-24:00; Sa 09:00-24:00; Su 10:00-24:00",
+        "wikidata": "Q31181841",
+        "wikipedia": "sr:Академија 28"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4634675,
+          44.8035047
+        ]
+      },
+      "id": "node/6060747670"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6060747671",
+        "addr:housenumber": "2",
+        "addr:street": "Узун Миркова",
+        "amenity": "cinema",
+        "int_name": "Art Bioskop Museum",
+        "name": "Арт Биоскоп Мусеум",
+        "name:sr": "Арт Биоскоп Мусеум",
+        "name:sr-Latn": "Art Bioskop Museum"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4561288,
+          44.819831
+        ]
+      },
+      "id": "node/6060747671"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6060747672",
+        "addr:housenumber": "6",
+        "addr:street": "Коларчева",
+        "amenity": "cinema",
+        "int_name": "Dvorana Kulturnog centra Beograda",
+        "name": "Дворана Културног центра Београда",
+        "name:sr": "Дворана Културног центра Београда",
+        "name:sr-Latn": "Dvorana Kulturnog centra Beograda",
+        "phone": "+381 11 2621174"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4603552,
+          44.8154042
+        ]
+      },
+      "id": "node/6060747672"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6813882953",
+        "addr:city": "Београд",
+        "addr:housenumber": "14",
+        "addr:postcode": "11000",
+        "addr:street": "Дечанска",
+        "alt_name": "Дворана Дома синдиката",
+        "alt_name:sr": "Дворана Дома синдиката",
+        "alt_name:sr-Latn": "Dvorana Doma sindikata",
+        "amenity": "cinema",
+        "check_date": "2024-09-11",
+        "cinema:3D": "yes",
+        "int_name": "MTS dvorana",
+        "name": "МТС дворана",
+        "name:sr": "МТС дворана",
+        "name:sr-Latn": "MTS dvorana",
+        "old_name": "Комбанк дворана",
+        "old_name:en": "Kombank Hall",
+        "old_name:sr": "Комбанк дворана",
+        "old_name:sr-Latn": "Kombank dvorana",
+        "screen": "6",
+        "website": "https://www.mtsdvorana.rs/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4626291,
+          44.8132202
+        ]
+      },
+      "id": "node/6813882953"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7196926385",
+        "amenity": "cinema",
+        "branch": "4D DELTA CITY",
+        "brand": "Cineplexx",
+        "brand:wikidata": "Q873340",
+        "brand:wikipedia": "en:Cineplexx Cinemas",
+        "check_date": "2025-04-26",
+        "level": "2",
+        "name": "Cineplexx",
+        "name:en": "Cineplexx"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.404516,
+          44.8058509
+        ]
+      },
+      "id": "node/7196926385"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7652275225",
+        "amenity": "cinema",
+        "branch": "BEO SHOPPING CENTER",
+        "brand": "Cineplexx",
+        "brand:wikidata": "Q873340",
+        "level": "2",
+        "name": "Cineplexx",
+        "opening_hours": "Mo-Fr 15:00-23:00; Sa,Su 11:00-23:00",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.5038058,
+          44.7870975
+        ]
+      },
+      "id": "node/7652275225"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9279833080",
+        "addr:housenumber": "1",
+        "addr:street": "Узун Миркова",
+        "amenity": "cinema",
+        "check_date": "2024-08-23",
+        "int_name": "Jugoslovenska kinoteka",
+        "name": "Југословенска кинотека",
+        "name:fr": "Cinémathèque Yougoslave",
+        "name:sr": "Југословенска кинотека",
+        "name:sr-Latn": "Jugoslovenska kinoteka",
+        "wikidata": "Q2860466",
+        "wikimedia_commons": "Category:Yugoslav Film Archive",
+        "wikipedia": "sr:Југословенска кинотека"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4558902,
+          44.8195939
+        ]
+      },
+      "id": "node/9279833080"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10107162909",
+        "amenity": "cinema",
+        "branch": "UŠĆE SHOPPING CENTER",
+        "brand": "Cineplexx",
+        "brand:wikidata": "Q873340",
+        "level": "2",
+        "name": "Cineplexx",
+        "opening_hours": "Mo-Su 11:00-23:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4381059,
+          44.8155573
+        ]
+      },
+      "id": "node/10107162909"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12229744090",
+        "addr:floor": "4",
+        "amenity": "cinema",
+        "brand": "CineStar",
+        "brand:wikidata": "Q321889",
+        "check_date": "2024-10-06",
+        "level": "4",
+        "name": "CineStar",
+        "name:sr": "СинеСтар"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4182923,
+          44.7871197
+        ]
+      },
+      "id": "node/12229744090"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12663581035",
+        "amenity": "cinema",
+        "branch": "BIG Beograd",
+        "brand": "Cineplexx",
+        "brand:wikidata": "Q873340",
+        "name": "Cineplexx"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.5093528,
+          44.817013
+        ]
+      },
+      "id": "node/12663581035"
+    }
+  ]
+}

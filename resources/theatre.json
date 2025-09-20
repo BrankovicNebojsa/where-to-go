@@ -1,0 +1,485 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2025-09-16T20:02:01Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2567920976",
+        "addr:housenumber": "5",
+        "addr:street": "Тургењева",
+        "amenity": "theatre",
+        "check_date": "2024-09-11",
+        "int_name": "Kulturni centar Cukarica",
+        "name": "Културни центар Чукарица",
+        "name:en": "Čukarica Cultural Center",
+        "name:sr": "Културни центар Чукарица",
+        "name:sr-Latn": "Kulturni centar Čukarica",
+        "wikidata": "Q110048095",
+        "wikipedia": "sr:Културни центар Чукарица"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4175165,
+          44.7832396
+        ]
+      },
+      "id": "node/2567920976"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3964427391",
+        "addr:city": "Београд",
+        "addr:housenumber": "16-18",
+        "addr:postcode": "11000",
+        "addr:street": "Светог Саве",
+        "amenity": "theatre",
+        "check_date": "2025-05-25",
+        "email": "p.slavija@gmail.com",
+        "int_name": "Pozoriste Slavija",
+        "name": "Позориште Славија",
+        "name:sr": "Позориште Славија",
+        "name:sr-Latn": "Pozorište Slavija",
+        "phone": "+381 11 2436995;+381 11 2437395",
+        "website": "https://pozoriste-slavija.co.rs/",
+        "wheelchair": "no",
+        "wikidata": "Q27892904",
+        "wikipedia": "sr:Позориште Славија"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.467412,
+          44.8008724
+        ]
+      },
+      "id": "node/3964427391"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3964869644",
+        "addr:housenumber": "42",
+        "addr:street": "Кнеза Михаила",
+        "amenity": "theatre",
+        "int_name": "Opera Madlenianum",
+        "name": "Опера Мадленианум",
+        "name:sr": "Опера Мадленианум",
+        "name:sr-Latn": "Opera Madlenianum"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4559895,
+          44.8186528
+        ]
+      },
+      "id": "node/3964869644"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4018323347",
+        "addr:housenumber": "21",
+        "addr:street": "Радослава Грујића",
+        "amenity": "theatre",
+        "check_date": "2025-08-03",
+        "int_name": "Pozoriste Puz",
+        "name": "Позориште Пуж",
+        "name:sr": "Позориште Пуж",
+        "name:sr-Latn": "Pozorište Puž",
+        "wheelchair": "no",
+        "wikidata": "Q31181805",
+        "wikipedia": "sr:Позориште Пуж"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.480067,
+          44.8004949
+        ]
+      },
+      "id": "node/4018323347"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5132850193",
+        "addr:housenumber": "3",
+        "addr:street": "Трг републике",
+        "alt_name:en": "Bosko Buha Theater",
+        "amenity": "theatre",
+        "int_name": "Pozoriste Bosko Buha",
+        "name": "Позориште Бошко Буха",
+        "name:en": "Bosko Buha Theatre",
+        "name:sr": "Позориште Бошко Буха",
+        "name:sr-Latn": "Pozorište Boško Buha",
+        "phone": "011/2632855",
+        "website": "https://www.buha.rs/",
+        "wikidata": "Q4952968",
+        "wikimedia_commons": "Category:Theater Bosko Buha",
+        "wikipedia": "sr:Позориште „Бошко Буха” Београд"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4595461,
+          44.8163219
+        ]
+      },
+      "id": "node/5132850193"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5333655521",
+        "amenity": "theatre",
+        "name": "Лево",
+        "name:en": "Levo",
+        "name:es": "Levo",
+        "phone": "+381113233002",
+        "wikidata": "Q16081913",
+        "wikipedia": "sr:Teatar Levo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4673821,
+          44.8084226
+        ]
+      },
+      "id": "node/5333655521"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5333655621",
+        "amenity": "theatre",
+        "email": "sekretarijat1-lola@sbb.rs",
+        "int_name": "AKUD „Ivo Lola Ribar”",
+        "name": "АКУД „Иво Лола Рибар”",
+        "name:en": "AA „Ivo Lola Ribar”",
+        "name:es": "Asociación artística “Ivo Lola Ribar”",
+        "name:sr": "АКУД „Иво Лола Рибар”",
+        "name:sr-Latn": "AKUD „Ivo Lola Ribar”",
+        "opening_hours": "Mo-Fr 10:00-00:00; Sa 10:00-19:00",
+        "phone": "+381113233002"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.467506,
+          44.8083493
+        ]
+      },
+      "id": "node/5333655621"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5764669503",
+        "amenity": "theatre",
+        "int_name": "Scena „Rasa Plaovic”",
+        "name": "Сцена „Раша Плаовић”",
+        "name:hr": "Scena „Raša Plaović“",
+        "name:sr": "Сцена „Раша Плаовић”",
+        "name:sr-Latn": "Scena „Raša Plaović”",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4613059,
+          44.8171229
+        ]
+      },
+      "id": "node/5764669503"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5881563388",
+        "amenity": "theatre",
+        "email": "panteatar@yahoo.com",
+        "name": "Pan Teatar",
+        "phone": "+381 11 3472984",
+        "website": "https://panteatar.rs/",
+        "wheelchair": "yes",
+        "wikidata": "Q31181853",
+        "wikipedia": "sr:Пан театар"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4979925,
+          44.7957413
+        ]
+      },
+      "id": "node/5881563388"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6037062969",
+        "addr:housenumber": "29",
+        "addr:street": "Теразије",
+        "amenity": "theatre",
+        "check_date": "2025-05-28",
+        "contact:facebook": "https://www.facebook.com/pozoristenaterazijama/",
+        "contact:instagram": "https://www.instagram.com/pozoristeterazije/",
+        "contact:twitter": "https://twitter.com/terazijetheatre",
+        "email": "office@pozoristeterazije.com",
+        "int_name": "Pozoriste na Terazijama",
+        "name": "Позориште на Теразијама",
+        "name:en": "Terazije Theatre",
+        "name:mk": "Театар Теразије",
+        "name:sr": "Позориште на Теразијама",
+        "name:sr-Latn": "Pozorište na Terazijama",
+        "phone": "+381 11 33 02 650",
+        "website": "https://pozoristeterazije.com/",
+        "wikidata": "Q6593509",
+        "wikimedia_commons": "Category:Terazije Theatre",
+        "wikipedia": "sr:Позориште на Теразијама"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4615656,
+          44.8128179
+        ]
+      },
+      "id": "node/6037062969"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6060960951",
+        "addr:city": "Београд",
+        "addr:housenumber": "3",
+        "addr:street": "Сењачка",
+        "amenity": "theatre",
+        "name": "Плаво позориште",
+        "name:en": "Plavo pozorište",
+        "website": "https://plavopozoriste.org/",
+        "wikidata": "Q116215441",
+        "wikipedia": "sr:Плаво позориште"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4417298,
+          44.7939505
+        ]
+      },
+      "id": "node/6060960951"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6061077285",
+        "addr:housenumber": "3",
+        "addr:street": "Радничка",
+        "amenity": "theatre",
+        "image": "https://photos.app.goo.gl/RL8PELcjtHQpvpKF7",
+        "int_name": "KPGT",
+        "name": "КПГТ",
+        "name:sr": "КПГТ",
+        "name:sr-Latn": "KPGT",
+        "wikidata": "Q109643874",
+        "wikipedia": "sr:КПГТ"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.421995,
+          44.7879394
+        ]
+      },
+      "id": "node/6061077285"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6061095967",
+        "addr:housenumber": "78",
+        "addr:street": "Ресавска",
+        "amenity": "theatre",
+        "name": "Teatar 78",
+        "wikidata": "Q31181802",
+        "wikipedia": "sr:Театар 78"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4573273,
+          44.8015043
+        ]
+      },
+      "id": "node/6061095967"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6918785921",
+        "addr:housenumber": "5",
+        "addr:street": "Тургењева",
+        "amenity": "theatre",
+        "check_date": "2024-09-11",
+        "int_name": "Teatar na Brdu",
+        "name": "Театар на Брду",
+        "name:sr": "Театар на Брду",
+        "name:sr-Latn": "Teatar na Brdu",
+        "website": "https://teatarnabrdu.rs/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4172214,
+          44.7834468
+        ]
+      },
+      "id": "node/6918785921"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10135344716",
+        "amenity": "theatre",
+        "name": "Omladinsko pozorište Dadov"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4626691,
+          44.8152859
+        ]
+      },
+      "id": "node/10135344716"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12175540256",
+        "amenity": "theatre",
+        "int_name": "Teatar Odeon",
+        "name": "Театар Одеон",
+        "wikipedia": "sr:Театар Одеон"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4620284,
+          44.8082466
+        ]
+      },
+      "id": "node/12175540256"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12773202685",
+        "addr:housenumber": "120d",
+        "addr:street": "Милутина Миланковића",
+        "amenity": "theatre",
+        "contact:facebook": "pozoriste.carapa",
+        "contact:instagram": "pozoristecarapa",
+        "email": "pozoristecarapa@gmail.com",
+        "int_name": "Decije pozoriste Carapa",
+        "name": "Дечије позориште Чарапа",
+        "name:sr": "Дечије позориште Чарапа",
+        "name:sr-Latn": "Dečije pozorište Čarapa",
+        "phone": "+381 60 618 52 41",
+        "website": "https://www.pozoristecarapa.rs/",
+        "wikidata": "Q31181800",
+        "wikipedia": "sr:Дечије позориште Чарапа"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.411773,
+          44.8126015
+        ]
+      },
+      "id": "node/12773202685"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12818281332",
+        "addr:city": "Београд",
+        "addr:housenumber": "6",
+        "addr:street": "Бранка Крсмановића",
+        "amenity": "theatre",
+        "contact:facebook": "BenAkibaKlub",
+        "contact:instagram": "standup_benakiba",
+        "email": "benakibaclub@gmail.com",
+        "phone": "+381 60 30 60 131",
+        "theatre:genre": "stand_up_comedy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4877546,
+          44.7981317
+        ]
+      },
+      "id": "node/12818281332"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12856588350",
+        "addr:housenumber": "1",
+        "addr:street": "Сквер Мире Траиловић",
+        "amenity": "theatre",
+        "email": "bitef@bitef.rs",
+        "int_name": "BITEF teatar",
+        "name": "БИТЕФ театар",
+        "name:en": "BITEF Theatre",
+        "name:sr": "БИТЕФ театар",
+        "name:sr-Latn": "BITEF teatar",
+        "phone": "+381 11 3220 176",
+        "website": "https://www.bitef.rs/",
+        "wikidata": "Q11058144",
+        "wikipedia": "sr:Битеф театар"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4684746,
+          44.8181744
+        ]
+      },
+      "id": "node/12856588350"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12874197469",
+        "amenity": "theatre",
+        "int_name": "Jugoslovensko dramsko pozoriste",
+        "name": "Југословенско драмско позориште",
+        "name:en": "Yugoslav Drama Theatre",
+        "name:sr": "Југословенско драмско позориште",
+        "name:sr-Latn": "Jugoslovensko dramsko pozorište",
+        "short_name": "ЈДП",
+        "short_name:sr": "ЈДП",
+        "short_name:sr-Latn": "JDP",
+        "wikidata": "Q3107134",
+        "wikipedia": "sr:Југословенско драмско позориште"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4648466,
+          44.8053318
+        ]
+      },
+      "id": "node/12874197469"
+    }
+  ]
+}

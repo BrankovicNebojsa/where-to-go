@@ -1,0 +1,4543 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-turbo",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2025-09-16T19:59:02Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1576353232",
+        "amenity": "bar",
+        "int_name": "Dali",
+        "name": "Дали",
+        "name:sr": "Дали",
+        "name:sr-Latn": "Dali"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4682524,
+          44.8151225
+        ]
+      },
+      "id": "node/1576353232"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1627905622",
+        "amenity": "bar",
+        "name": "Čitaonica",
+        "opening_hours": "Su-Th 10:00-24:00, Fr,Sa 10:00-01:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4560174,
+          44.8166766
+        ]
+      },
+      "id": "node/1627905622"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1866314183",
+        "amenity": "bar",
+        "floating": "yes",
+        "name": "Office Pub",
+        "name:en": "Office Pub",
+        "name:sr": "Офис паб",
+        "name:sr-Latn": "Ofis pab"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4206781,
+          44.8329401
+        ]
+      },
+      "id": "node/1866314183"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/1995533399",
+        "amenity": "bar",
+        "name": "Kamarad"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4089263,
+          44.7805265
+        ]
+      },
+      "id": "node/1995533399"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2107290613",
+        "amenity": "bar",
+        "floating": "yes",
+        "name": "Дубаи",
+        "name:en": "Dubai",
+        "name:sr": "Дубаи",
+        "name:sr-Latn": "Dubai",
+        "website": "http://cocktailbar.izlog.org/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4236402,
+          44.8271507
+        ]
+      },
+      "id": "node/2107290613"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2445110230",
+        "addr:housenumber": "43",
+        "addr:street": "Кнеза Данила",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "name": "Lavanda Bar",
+        "name:sr": "Лаванда Бар",
+        "opening_hours": "Mo-Su 08:00-23:00",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4781377,
+          44.8086988
+        ]
+      },
+      "id": "node/2445110230"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2464500728",
+        "addr:housenumber": "20",
+        "addr:street": "Косанчићев венац",
+        "amenity": "bar",
+        "check_date": "2025-04-23",
+        "name": "Макадам",
+        "name:en": "Makadam",
+        "name:sr": "Макадам",
+        "name:sr-Latn": "Makadam",
+        "phone": "+381 11 263 0272"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4514041,
+          44.8167013
+        ]
+      },
+      "id": "node/2464500728"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2528285894",
+        "amenity": "bar",
+        "int_name": "D Bar",
+        "name": "Д Бар"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.463527,
+          44.8192019
+        ]
+      },
+      "id": "node/2528285894"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2528285897",
+        "amenity": "bar",
+        "int_name": "Dobrila",
+        "name": "Добрила",
+        "name:sr": "Добрила",
+        "name:sr-Latn": "Dobrila"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4627813,
+          44.8195383
+        ]
+      },
+      "id": "node/2528285897"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2538755982",
+        "amenity": "bar",
+        "name": "Вила Маска",
+        "name:en": "Vila Maska",
+        "name:sr": "Вила Маска",
+        "name:sr-Latn": "Vila Maska",
+        "opening_hours": "Mo-Fr 08:00-26:00, Sa-Su 10:00-26:00",
+        "website": "http://www.villamaska.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4674879,
+          44.7962839
+        ]
+      },
+      "id": "node/2538755982"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2542361141",
+        "addr:housenumber": "71",
+        "addr:street": "Кнегиње Зорке",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "name": "Monk's Bar",
+        "outdoor_seating": "yes",
+        "phone": "0691185151"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4721905,
+          44.8033042
+        ]
+      },
+      "id": "node/2542361141"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2542361153",
+        "amenity": "bar",
+        "int_name": "Kolonija",
+        "name": "Колонија",
+        "name:sr": "Колонија",
+        "name:sr-Latn": "Kolonija"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4791018,
+          44.8142917
+        ]
+      },
+      "id": "node/2542361153"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2599048823",
+        "amenity": "bar",
+        "check_date": "2023-05-09",
+        "cuisine": "tapas",
+        "name": "Podrum Wine Art",
+        "opening_hours": "Mo-Sa 09:00-01:00",
+        "phone": "+381 11 2625 237",
+        "website": "https://www.wineart.co.rs/podrum/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4587979,
+          44.820805
+        ]
+      },
+      "id": "node/2599048823"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2669384990",
+        "amenity": "bar",
+        "check_date": "2024-08-30",
+        "name": "Dante"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4664543,
+          44.796368
+        ]
+      },
+      "id": "node/2669384990"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2774835830",
+        "addr:city": "Београд",
+        "addr:housenumber": "45a",
+        "addr:street": "Таковска",
+        "amenity": "bar",
+        "email": "laika4belgrade@facebook.com",
+        "internet_access": "wlan",
+        "level": "6",
+        "name": "Laika Panorama Bar & Night Club",
+        "note": "One of the best views on Belgrade from rooftop terrace, and great place for afternoon and late night out",
+        "opening_hours": "17:00-04:00",
+        "smoking": "yes",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.475325,
+          44.8154882
+        ]
+      },
+      "id": "node/2774835830"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3061722685",
+        "amenity": "bar",
+        "name": "Karusel",
+        "opening_hours": "Su-Th 12:00-24:00; Fr-Sa 12:00-01:00",
+        "smoking": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4615913,
+          44.822362
+        ]
+      },
+      "id": "node/3061722685"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3303941131",
+        "addr:city": "Београд",
+        "addr:housenumber": "62",
+        "addr:street": "Венизелосова",
+        "amenity": "bar",
+        "description": "A Cafe Bar as it once was popular in Belgrade. Loved by the locals. Nice interior design and very nice people hanging in this place. They mostly play House music, and DJ is present on weekends. Reservations are smart thing to do on Fridays and Saturdays.",
+        "int_name": "Djura",
+        "name": "Ђура",
+        "name:en": "Djura",
+        "name:sr": "Ђура",
+        "name:sr-Latn": "Đura",
+        "opening_hours": "Su-Th 09:00-01:00; Fr-Sa 09:00-02:00",
+        "phone": "+381 11 3391269, +381 64 91 08 628",
+        "smoking": "separated",
+        "website": "https://www.facebook.com/DjuraCafeBar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4736672,
+          44.8194625
+        ]
+      },
+      "id": "node/3303941131"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3465601641",
+        "amenity": "bar",
+        "int_name": "Penzija",
+        "name": "Пензија",
+        "name:sr": "Пензија",
+        "name:sr-Latn": "Penzija"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4781911,
+          44.8066767
+        ]
+      },
+      "id": "node/3465601641"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3492355693",
+        "addr:housenumber": "3a",
+        "addr:street": "Мирочка",
+        "amenity": "bar",
+        "name": "Београдски бистро",
+        "name:en": "Beogradski Bistro",
+        "name:sr": "Београдски бистро",
+        "name:sr-Latn": "Beogradski bistro"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4753051,
+          44.8088674
+        ]
+      },
+      "id": "node/3492355693"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3519309593",
+        "addr:housenumber": "1",
+        "addr:street": "Краљице Марије",
+        "amenity": "bar",
+        "check_date": "2025-09-15",
+        "name": "Jolly Roger"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4759714,
+          44.8093928
+        ]
+      },
+      "id": "node/3519309593"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3521814915",
+        "amenity": "bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4775472,
+          44.8086159
+        ]
+      },
+      "id": "node/3521814915"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3634078623",
+        "amenity": "bar",
+        "name": "Nargila"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4749087,
+          44.8097914
+        ]
+      },
+      "id": "node/3634078623"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/3727143440",
+        "amenity": "bar",
+        "name": "Ice Bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4661009,
+          44.8125158
+        ]
+      },
+      "id": "node/3727143440"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4159876492",
+        "addr:housenumber": "44",
+        "addr:street": "Страхињића Бана",
+        "amenity": "bar",
+        "internet_access": "wlan",
+        "level": "-1",
+        "name": "Брат Че",
+        "name:en": "Brat Če",
+        "smoking": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4601917,
+          44.8221748
+        ]
+      },
+      "id": "node/4159876492"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4162190516",
+        "addr:housenumber": "18",
+        "addr:street": "Кнегиње Љубице",
+        "amenity": "bar",
+        "int_name": "Blaznavac kafe bar",
+        "name": "Блазнавац кафе бар",
+        "opening_hours": "Mo-Th 09:00-24:00, Fr,Sa 09:00-01:00, Su 09:00-24:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4618047,
+          44.8198551
+        ]
+      },
+      "id": "node/4162190516"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4166557062",
+        "amenity": "bar",
+        "email": "poletnovi@gmail.com",
+        "int_name": "Polet",
+        "internet_access": "wlan",
+        "name": "Полет",
+        "phone": "+38162550868"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4650445,
+          44.8174399
+        ]
+      },
+      "id": "node/4166557062"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4166557063",
+        "amenity": "bar",
+        "int_name": "Zaokret",
+        "name": "Заокрет",
+        "name:fr": "Zaokret",
+        "opening_hours": "Mo-We 10:00-24:00; Fr-Sa 10:00-01:00; Su, Th 12:00-00:00",
+        "website": "https://m.facebook.com/zaokret"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4655371,
+          44.8172983
+        ]
+      },
+      "id": "node/4166557063"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4166557068",
+        "amenity": "bar",
+        "name": "abopnwtahye"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4652474,
+          44.8178741
+        ]
+      },
+      "id": "node/4166557068"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4176162691",
+        "addr:housenumber": "7",
+        "addr:street": "Гаврила Принципа",
+        "alt_name": "Шутирање",
+        "alt_name:sr": "Шутирање",
+        "alt_name:sr-Latn": "Šutiranje",
+        "amenity": "bar",
+        "check_date": "2025-04-23",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "name": "Shootiranje",
+        "opening_hours": "Mo-Sa 16:00-24:00, Su 16:00-01:00",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4544308,
+          44.8136182
+        ]
+      },
+      "id": "node/4176162691"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4322166190",
+        "addr:street": "Скадарска",
+        "amenity": "bar",
+        "check_date": "2024-09-19",
+        "int_name": "Kaldrma",
+        "name": "Калдрма",
+        "phone": "0643081422"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4652212,
+          44.8182427
+        ]
+      },
+      "id": "node/4322166190"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4338249300",
+        "amenity": "bar",
+        "name": "District"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4653009,
+          44.8179672
+        ]
+      },
+      "id": "node/4338249300"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4372213491",
+        "amenity": "bar",
+        "internet_access": "wlan",
+        "name": "Тезга",
+        "name:en": "Tezga",
+        "name:sr": "Тезга",
+        "name:sr-Latn": "Tezga",
+        "name:tr": "Tezgah",
+        "opening_hours": "Su-Th 09:00-24:00, Fr,Sa 09:00-01:00",
+        "outdoor_seating": "pedestrian_zone",
+        "phone": "+381113346598"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.465828,
+          44.8188101
+        ]
+      },
+      "id": "node/4372213491"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4419399890",
+        "amenity": "bar",
+        "check_date": "2023-10-10",
+        "name": "Цигла бар",
+        "name:en": "Cigla Bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4586011,
+          44.8171829
+        ]
+      },
+      "id": "node/4419399890"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4430040790",
+        "amenity": "bar",
+        "check_date": "2025-09-01",
+        "int_name": "Prohibicija",
+        "internet_access": "wlan",
+        "name": "Прохибиција",
+        "name:sr": "Прохибиција",
+        "name:sr-Latn": "Prohibicija"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4509685,
+          44.8145321
+        ]
+      },
+      "id": "node/4430040790"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4458213696",
+        "addr:city": "Београд",
+        "addr:housenumber": "13",
+        "addr:postcode": "11000",
+        "addr:street": "Капетан Мишина",
+        "amenity": "bar",
+        "level": "-1",
+        "name": "Simon Bolivar",
+        "smoking": "yes",
+        "toilets": "yes",
+        "toilets:wheelchair": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4608385,
+          44.8210792
+        ]
+      },
+      "id": "node/4458213696"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4515029611",
+        "addr:city": "Београд",
+        "addr:housenumber": "15",
+        "addr:postcode": "11000",
+        "addr:street": "Цетињска",
+        "amenity": "bar",
+        "internet_access": "wlan",
+        "name": "Vespiccolo",
+        "phone": "+381 11 4094655",
+        "website": "https://www.facebook.com/pg/Vespiccolo-1539565759685544"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4654212,
+          44.81748
+        ]
+      },
+      "id": "node/4515029611"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4612339990",
+        "amenity": "bar",
+        "cuisine": "burger;grill",
+        "internet_access": "wlan",
+        "level": "1",
+        "name": "The Passengers",
+        "opening_hours": "Mo-Fr 08:30-01:00; Sa 09:30-01:00; Su 10:00-01:00",
+        "outdoor_seating": "yes",
+        "phone": "+381 60 6464109",
+        "website": "https://www.passengersbar.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4590504,
+          44.8203539
+        ]
+      },
+      "id": "node/4612339990"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4715945593",
+        "addr:housenumber": "33",
+        "addr:postcode": "11000",
+        "addr:street": "Косовска",
+        "amenity": "bar",
+        "check_date": "2025-06-25",
+        "cuisine": "coffee_shop;international;regional",
+        "internet_access": "wlan",
+        "name": "Дринка",
+        "name:en": "Drinka",
+        "name:sr": "Дринка",
+        "name:sr-Latn": "Drinka",
+        "opening_hours": "Mo-Su 08:00-01:00",
+        "phone": "+381 11 3037794"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4658747,
+          44.8126461
+        ]
+      },
+      "id": "node/4715945593"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4730148909",
+        "addr:housenumber": "27",
+        "addr:postcode": "11000",
+        "addr:street": "Палмотићева",
+        "amenity": "bar",
+        "name": "Organski Podrum",
+        "opening_hours": "Mo 14:30-23:00; Tu-Sa 10:00-23:00, Su 11:00-17:00",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4693055,
+          44.8144728
+        ]
+      },
+      "id": "node/4730148909"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4839591500",
+        "addr:housenumber": "90",
+        "addr:street": "Лазара Кујунџића",
+        "amenity": "bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4102766,
+          44.7807123
+        ]
+      },
+      "id": "node/4839591500"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/4987254521",
+        "amenity": "bar",
+        "internet_access": "wlan",
+        "name": "Das Boot",
+        "opening_hours": "Fr-Sa 19:00-01:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.460406,
+          44.8203255
+        ]
+      },
+      "id": "node/4987254521"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5009467621",
+        "addr:housenumber": "4",
+        "addr:postcode": "11103",
+        "addr:street": "Македонска",
+        "amenity": "bar",
+        "int_name": "Bekstejdz",
+        "internet_access": "wlan",
+        "name": "Бекстејџ",
+        "opening_hours": "Mo-Sa 08:00-03:00; Su 08:00-00:00",
+        "phone": "062262212"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4612469,
+          44.8153292
+        ]
+      },
+      "id": "node/5009467621"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5062469477",
+        "amenity": "bar",
+        "name": "KPTM"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4720688,
+          44.8231916
+        ]
+      },
+      "id": "node/5062469477"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5183426524",
+        "addr:city": "Београд",
+        "addr:housenumber": "13",
+        "addr:street": "Доситејева",
+        "amenity": "bar",
+        "name": "Wine Bar & Shop Quinta",
+        "name:en": "Wine Bar & Shop Quinta",
+        "opening_hours": "Mo-Th 09:00-00:00, Fr-Su 09:00-01:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4624401,
+          44.8183988
+        ]
+      },
+      "id": "node/5183426524"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5197747331",
+        "addr:city": "Београд",
+        "addr:housenumber": "17",
+        "addr:street": "Булевар кнеза Александра Карађорђевића",
+        "amenity": "bar",
+        "name": "Cheers"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4579597,
+          44.7767823
+        ]
+      },
+      "id": "node/5197747331"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5420736623",
+        "addr:housenumber": "6",
+        "addr:street": "Велике степенице",
+        "amenity": "bar",
+        "contact:instagram": "leposavabar",
+        "int_name": "Leposava",
+        "name": "Лепосава",
+        "name:sr": "Лепосава",
+        "name:sr-Latn": "Leposava",
+        "opening_hours": "Su-Th 10:00-00:00, Fr-Sa 10:00-01:00",
+        "phone": "+381 11 4120401"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4503132,
+          44.8184823
+        ]
+      },
+      "id": "node/5420736623"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5462699721",
+        "amenity": "bar",
+        "check_date": "2024-07-13",
+        "internet_access": "wlan",
+        "name": "Задруга",
+        "name:en": "Zadruga",
+        "name:ru": "Задруга",
+        "name:sr": "Задруга",
+        "name:sr-Latn": "Zadruga",
+        "opening_hours": "Mo-Su 14:00-00:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.463521,
+          44.8168232
+        ]
+      },
+      "id": "node/5462699721"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5586110721",
+        "addr:housenumber": "6",
+        "addr:street": "Господар Јевремова",
+        "amenity": "bar",
+        "check_date": "2025-02-25",
+        "name": "Leila Records",
+        "name:sr": "Леила",
+        "name:sr-Latn": "Leila",
+        "opening_hours": "Mo-Fr,Su 09:00-24:00; Sa 09:00-01:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4565056,
+          44.8222145
+        ]
+      },
+      "id": "node/5586110721"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5817764288",
+        "addr:housenumber": "4a",
+        "addr:street": "Краља Петра",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "int_name": "Autsajder",
+        "name": "Аутсајдер",
+        "name:sr": "Аутсајдер",
+        "name:sr-Latn": "Autsajder",
+        "opening_hours": "Su-Th 08:00-24:00, Fr,Sa 08:00-01:00",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4524189,
+          44.817631
+        ]
+      },
+      "id": "node/5817764288"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5846536835",
+        "amenity": "bar",
+        "check_date": "2025-04-23",
+        "int_name": "Pijaca bar",
+        "name": "Пијаца бар",
+        "name:sr": "Пијаца бар",
+        "name:sr-Latn": "Pijaca bar",
+        "opening_hours": "Mo-Fr 14:00-22:30; Sa,Su 13:00-22:30"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4541421,
+          44.8181167
+        ]
+      },
+      "id": "node/5846536835"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5846544278",
+        "addr:housenumber": "6",
+        "addr:street": "Голсвордијева",
+        "amenity": "bar",
+        "name": "Cornelius & Cylinder"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4758876,
+          44.8024036
+        ]
+      },
+      "id": "node/5846544278"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6019374496",
+        "amenity": "bar",
+        "check_date:opening_hours": "2021-12-11",
+        "contact:facebook": "https://www.facebook.com/bohobarbelgrade/",
+        "email": "bohobarbg@gmail.com",
+        "name": "Бохо бар",
+        "name:en": "Boho Bar",
+        "name:sr": "Бохо бар",
+        "name:sr-Latn": "Boho bar",
+        "opening_hours": "Mo-Fr 12:00-02:00, Sa-Su 12:00-03:00",
+        "outdoor_seating": "garden",
+        "phone": "+381 62 337766",
+        "reservation": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4518608,
+          44.8252592
+        ]
+      },
+      "id": "node/6019374496"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6060216697",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4430145,
+          44.7956579
+        ]
+      },
+      "id": "node/6060216697"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6110193351",
+        "addr:housenumber": "13",
+        "addr:street": "Цара Душана",
+        "amenity": "bar",
+        "brewery": "yes",
+        "check_date": "2023-10-10",
+        "int_name": "Atom akademija",
+        "name": "Атом академија",
+        "name:sr": "Атом академија",
+        "name:sr-Latn": "Atom akademija",
+        "outdoor_seating": "no",
+        "smoking": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4582358,
+          44.8245737
+        ]
+      },
+      "id": "node/6110193351"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6170154389",
+        "addr:city": "Београд",
+        "addr:housenumber": "2",
+        "addr:postcode": "11000",
+        "addr:street": "Зетска",
+        "amenity": "bar",
+        "name": "Beti Ford",
+        "smoking": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.46408,
+          44.8170531
+        ]
+      },
+      "id": "node/6170154389"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6184181727",
+        "amenity": "bar",
+        "int_name": "Makondo",
+        "name": "Макондо",
+        "name:sr": "Макондо",
+        "name:sr-Latn": "Makondo",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4046892,
+          44.7856454
+        ]
+      },
+      "id": "node/6184181727"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6272885117",
+        "addr:street": "Руска",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "name": "Déjà Vu",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4375247,
+          44.7932897
+        ]
+      },
+      "id": "node/6272885117"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6276956156",
+        "amenity": "bar",
+        "name": "Pivnica 59"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.415293,
+          44.7607822
+        ]
+      },
+      "id": "node/6276956156"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6278612501",
+        "addr:city": "Београд",
+        "addr:housenumber": "54",
+        "addr:postcode": "11000",
+        "addr:street": "Сарајевска",
+        "amenity": "bar",
+        "check_date:opening_hours": "2025-02-19",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "level": "0",
+        "name": "Chopper",
+        "opening_hours": "Mo-Sa 09:00-24:00; Su 11:00-24:00",
+        "outdoor_seating": "yes",
+        "smoking": "dedicated",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.452633,
+          44.8018064
+        ]
+      },
+      "id": "node/6278612501"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6321860989",
+        "amenity": "bar",
+        "name": "Druid Bar",
+        "opening_hours": "Su, Tu-Th 17:00-00:00; Fr-Sa 17:00-01:00",
+        "phone": "+381112181540"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4551773,
+          44.8216572
+        ]
+      },
+      "id": "node/6321860989"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6321861087",
+        "amenity": "bar",
+        "check_date": "2025-09-16",
+        "name": "Rakia bar",
+        "name:en": "Rakia Bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4601173,
+          44.817775
+        ]
+      },
+      "id": "node/6321861087"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6321861190",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "name": "Bar Central",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4563262,
+          44.820926
+        ]
+      },
+      "id": "node/6321861190"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6321861191",
+        "addr:housenumber": "15",
+        "addr:street": "Цетињска",
+        "amenity": "bar",
+        "check_date": "2024-11-24",
+        "contact:facebook": "https://www.facebook.com/klub.dvoristance/",
+        "name": "Двориштанце",
+        "name:en": "Dvoristance",
+        "name:sr": "Двориштанце",
+        "name:sr-Latn": "Dvorištance",
+        "opening_hours": "Mo-Th 09:00-01:00; Fr-Sa 09:00-02:00; Su 09:00-01:00",
+        "outdoor_seating": "yes",
+        "phone": "+381 63 404405",
+        "smoking": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4652118,
+          44.8177103
+        ]
+      },
+      "id": "node/6321861191"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6324874785",
+        "amenity": "bar",
+        "check_date": "2024-08-11",
+        "name": "Kvaka 22",
+        "name:sr-Latn": "Kvaka 22 (alternativ culture house)"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4831375,
+          44.808906
+        ]
+      },
+      "id": "node/6324874785"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6326273086",
+        "amenity": "bar",
+        "name": "Idiott Bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4723604,
+          44.8146293
+        ]
+      },
+      "id": "node/6326273086"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6326273286",
+        "amenity": "bar",
+        "int_name": "Klub Svetskih Putnika",
+        "level": "-1",
+        "name": "Клуб Светских Путника",
+        "name:en": "World Travellers Club",
+        "name:sr": "Клуб Светских Путника",
+        "name:sr-Latn": "Club Svetskih Putnika"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4644196,
+          44.8167342
+        ]
+      },
+      "id": "node/6326273286"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6326273986",
+        "amenity": "bar",
+        "check_date": "2025-06-05",
+        "name": "Kultura Bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4683956,
+          44.8060416
+        ]
+      },
+      "id": "node/6326273986"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6335728795",
+        "amenity": "bar",
+        "name": "Kaolinja"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4802071,
+          44.8044446
+        ]
+      },
+      "id": "node/6335728795"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6409989786",
+        "amenity": "bar",
+        "check_date": "2025-07-25",
+        "int_name": "SS Bar",
+        "name": "ШШ Бар",
+        "name:en": "Shsh Bar",
+        "name:sr": "ШШ Бар",
+        "name:sr-Latn": "ŠŠ Bar",
+        "outdoor_seating": "yes",
+        "smoking": "yes",
+        "website": "http://facebook.com/shssssssh"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4609195,
+          44.8194573
+        ]
+      },
+      "id": "node/6409989786"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6522520839",
+        "amenity": "bar",
+        "check_date": "2025-06-05",
+        "name": "Monkey Bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4652627,
+          44.8020471
+        ]
+      },
+      "id": "node/6522520839"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6575304016",
+        "addr:housenumber": "2-4",
+        "addr:street": "Карађорђева",
+        "amenity": "bar",
+        "name": "Piazza"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4485747,
+          44.8190368
+        ]
+      },
+      "id": "node/6575304016"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6593785185",
+        "addr:city": "Београд",
+        "addr:housenumber": "21",
+        "addr:postcode": "11000",
+        "addr:street": "Балканска",
+        "amenity": "bar",
+        "check_date": "2025-07-21",
+        "level": "0",
+        "name": "Beersheep",
+        "opening_hours": "Mo-Th 16:00-24:00; Fr-Sa 15:00-01:00; Su 15:00-23:00",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "shop": "alcohol",
+        "smoking": "yes",
+        "website": "https://beersheep.rs/",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4603469,
+          44.8112257
+        ]
+      },
+      "id": "node/6593785185"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6700001683",
+        "addr:housenumber": "23",
+        "addr:street": "Карађорђева",
+        "amenity": "bar",
+        "name": "Индустрија бар",
+        "name:en": "Industrija Bar",
+        "name:sr": "Индустрија бар",
+        "name:sr-Latn": "Industrija bar",
+        "opening_hours": "Mo-Th off; Fr-Sa 21:00-03:00; Su off",
+        "phone": "+381 64 1195519",
+        "website": "https://industrija-bar.business.site/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4503041,
+          44.8164689
+        ]
+      },
+      "id": "node/6700001683"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6707743598",
+        "addr:housenumber": "11g",
+        "addr:street": "Булевар Црвене армије",
+        "amenity": "bar",
+        "check_date": "2025-04-26",
+        "level": "0",
+        "name": "Johnny's",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4044985,
+          44.8067145
+        ]
+      },
+      "id": "node/6707743598"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6707991882",
+        "addr:housenumber": "20",
+        "addr:street": "Пјарона де Мондезира",
+        "amenity": "bar",
+        "check_date": "2025-05-08",
+        "indoor_seating": "yes",
+        "name": "СирОвина",
+        "name:en": "SirOvina",
+        "name:sr": "СирОвина",
+        "name:sr-Latn": "SirOvina",
+        "opening_hours": "Mo-Su 10:00-22:00",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4556885,
+          44.8224317
+        ]
+      },
+      "id": "node/6707991882"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6715035385",
+        "amenity": "bar",
+        "name": "Kafe Arara",
+        "opening_hours": "Mo-Su 05:30-23:00",
+        "phone": "+381 11 3835376",
+        "website": "https://cafe-1972.business.site/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4673819,
+          44.7920501
+        ]
+      },
+      "id": "node/6715035385"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6770720585",
+        "amenity": "bar",
+        "contact:facebook": "https://www.facebook.com/strogicentarjevremova/",
+        "contact:instagram": "https://www.instagram.com/strogi_centar/",
+        "int_name": "Strogi centar",
+        "name": "Строги центар",
+        "name:sr": "Строги центар",
+        "name:sr-Latn": "Strogi centar",
+        "opening_hours": "Su-Th 18:00-01:00; Fr-Sa 18:00-02:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4615962,
+          44.81968
+        ]
+      },
+      "id": "node/6770720585"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6774938697",
+        "amenity": "bar",
+        "check_date": "2024-02-05",
+        "name": "Криза бар",
+        "name:en": "Kriza bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4583805,
+          44.8094947
+        ]
+      },
+      "id": "node/6774938697"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6774940485",
+        "amenity": "bar",
+        "check_date": "2024-06-10",
+        "indoor_seating": "yes",
+        "name": "Fit Bar",
+        "opening_hours": "Mo-Fr 08:00-23:00; Sa,Su 10:00-23:00",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4878287,
+          44.7985543
+        ]
+      },
+      "id": "node/6774940485"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6777828703",
+        "amenity": "bar",
+        "name:en": "Nargila"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4779448,
+          44.7834544
+        ]
+      },
+      "id": "node/6777828703"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6788593386",
+        "air_conditioning": "yes",
+        "amenity": "bar",
+        "check_date": "2024-03-28",
+        "indoor_seating": "yes",
+        "name": "Sweet wine",
+        "opening_hours": "Mo-Sa 09:00-22:00; Su 09:00-15:00",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.50125,
+          44.7922208
+        ]
+      },
+      "id": "node/6788593386"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6832907886",
+        "amenity": "bar",
+        "name": "Šoljica"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4622835,
+          44.8130616
+        ]
+      },
+      "id": "node/6832907886"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6832907888",
+        "amenity": "bar",
+        "check_date": "2025-09-03",
+        "indoor_seating": "yes",
+        "name": "Dogma Brewery Central",
+        "opening_hours": "12:00-01:00",
+        "outdoor_seating": "no",
+        "smoking": "yes",
+        "website:menu": "https://dogmabrewery.com/lokacije/dogma-central/karta-piva/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4620377,
+          44.8158544
+        ]
+      },
+      "id": "node/6832907888"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6832907889",
+        "addr:housenumber": "63",
+        "addr:postcode": "11000",
+        "addr:street": "Ломина",
+        "amenity": "bar",
+        "name": "Publin",
+        "opening_hours": "Su-Th 14:00-00:00; Fr-Sa 14:00-01:00",
+        "smoking": "yes",
+        "website": "https://m.facebook.com/publin.pab"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4589255,
+          44.8103729
+        ]
+      },
+      "id": "node/6832907889"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6832907985",
+        "amenity": "bar",
+        "check_date": "2025-04-29",
+        "name": "Marshall Pub"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4564964,
+          44.8173794
+        ]
+      },
+      "id": "node/6832907985"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6832908088",
+        "amenity": "bar",
+        "check_date": "2023-11-22",
+        "int_name": "Gradska prica",
+        "name": "Градска прича",
+        "name:sr": "Градска прича",
+        "name:sr-Latn": "Gradska priča",
+        "opening_hours": "Su-Th 08:00-24:00, Fr,Sa 08:00-01:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4566269,
+          44.8174739
+        ]
+      },
+      "id": "node/6832908088"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6832928087",
+        "addr:housenumber": "17",
+        "addr:street": "Обилићев венац",
+        "amenity": "bar",
+        "brewery": "yes",
+        "check_date": "2025-02-09",
+        "name": "OK.no",
+        "opening_hours": "Su-Th 08:00-24:00, Fr-Sa 08:00-01:00",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4577716,
+          44.8160988
+        ]
+      },
+      "id": "node/6832928087"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6832928189",
+        "amenity": "bar",
+        "check_date": "2025-05-11",
+        "name": "Zappa Bar",
+        "opening_hours": "Mo-Fr 08:00-24:00; Sa-Su 08:00-01:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4551827,
+          44.8200733
+        ]
+      },
+      "id": "node/6832928189"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6832944487",
+        "amenity": "bar",
+        "name": "Pivopija",
+        "opening_hours": "Mo-Su 16:00-24:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.431209,
+          44.8120122
+        ]
+      },
+      "id": "node/6832944487"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6832979385",
+        "amenity": "bar",
+        "name": "Bistro Žiz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4288922,
+          44.8139529
+        ]
+      },
+      "id": "node/6832979385"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6832993187",
+        "amenity": "bar",
+        "name": "Пивара",
+        "name:en": "Pivara",
+        "name:sr": "Пивара",
+        "name:sr-Latn": "Pivara"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.466351,
+          44.81845
+        ]
+      },
+      "id": "node/6832993187"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6833013094",
+        "amenity": "bar",
+        "name": "Kandinsky"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4566156,
+          44.8223717
+        ]
+      },
+      "id": "node/6833013094"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6833013290",
+        "amenity": "bar",
+        "int_name": "Bar Sasa",
+        "name": "Бар Саша",
+        "name:sr": "Бар Саша",
+        "name:sr-Latn": "Bar Saša",
+        "opening_hours": "Mo-Sa 12:00-24:00; Su off"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4609601,
+          44.8198008
+        ]
+      },
+      "id": "node/6833013290"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6833013487",
+        "amenity": "bar",
+        "check_date": "2024-07-13",
+        "name": "Rock Beer Pub",
+        "opening_hours": "Su-Th 17:00-24:00, Fr,Sa 17:00-01:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4626716,
+          44.8194146
+        ]
+      },
+      "id": "node/6833013487"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6837614186",
+        "amenity": "bar",
+        "name": "Oblak u Pantalonama"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.481276,
+          44.8039228
+        ]
+      },
+      "id": "node/6837614186"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6837615485",
+        "amenity": "bar",
+        "name": "Beer House"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4836379,
+          44.8021934
+        ]
+      },
+      "id": "node/6837615485"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6838002987",
+        "amenity": "bar",
+        "name": "Tibar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.480976,
+          44.7981776
+        ]
+      },
+      "id": "node/6838002987"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6840453188",
+        "amenity": "bar",
+        "name": "Mala maca"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4796238,
+          44.8026154
+        ]
+      },
+      "id": "node/6840453188"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/6840459893",
+        "amenity": "bar",
+        "name": "Ruina",
+        "opening_hours": "Mo-Su 09:00-00:00",
+        "outdoor_seating": "yes",
+        "phone": "+381 11 2456994"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4859511,
+          44.7996665
+        ]
+      },
+      "id": "node/6840459893"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7255922722",
+        "addr:housenumber": "248",
+        "addr:street": "Булевар краља Александра",
+        "amenity": "bar",
+        "bar": "wine_bar",
+        "brewery": "Amstel;Zaječarsko",
+        "contact:facebook": "https://www.facebook.com/hrastovinabar/",
+        "email": "hrastovinabar@gmail.com",
+        "name": "Hrastovina",
+        "opening_hours": "Mo-Sa 08:30-24:00, Su 09:00-24:00",
+        "outdoor_seating": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "phone": "+381 11 4521760",
+        "start_date": "2019"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.492514,
+          44.7980828
+        ]
+      },
+      "id": "node/7255922722"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7658140785",
+        "addr:housenumber": "7a",
+        "addr:street": "Вука Караџића",
+        "amenity": "bar",
+        "check_date": "2025-09-05",
+        "internet_access": "wlan",
+        "name": "Балкански шпијун",
+        "name:en": "Balkanski Spijun",
+        "name:sr": "Балкански шпијун",
+        "name:sr-Latn": "Balkanski špijun",
+        "opening_hours": "09:00-24:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4556668,
+          44.8175009
+        ]
+      },
+      "id": "node/7658140785"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/7975950887",
+        "addr:street": "Савски насип",
+        "amenity": "bar",
+        "name": "Dve reke"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4232267,
+          44.7978563
+        ]
+      },
+      "id": "node/7975950887"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8231743420",
+        "addr:city": "Београд",
+        "addr:housenumber": "8",
+        "addr:postcode": "11000",
+        "addr:street": "Пожаревачка",
+        "amenity": "bar",
+        "check_date": "2025-08-31",
+        "contact:facebook": "https://www.facebook.com/dzakbar011/",
+        "name": "Džak Bar",
+        "phone": "+381 65 2024166"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4799268,
+          44.8015099
+        ]
+      },
+      "id": "node/8231743420"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8231743421",
+        "addr:city": "Београд",
+        "addr:housenumber": "8",
+        "addr:postcode": "11000",
+        "addr:street": "Пожаревачка",
+        "amenity": "bar",
+        "name": "Vino Grad",
+        "phone": "+381 11 4036371"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4797243,
+          44.8015869
+        ]
+      },
+      "id": "node/8231743421"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8237804987",
+        "addr:city": "Београд",
+        "addr:housenumber": "5e",
+        "addr:postcode": "11000",
+        "addr:street": "Јована Рајића",
+        "amenity": "bar",
+        "contact:facebook": "https://www.facebook.com/vino.beograd/",
+        "contact:instagram": "https://www.instagram.com/izaberivino",
+        "drink:wine": "yes",
+        "email": "info@izaberivino.com",
+        "name": "Vino Bar & Shop",
+        "phone": "+381 11 2832392",
+        "shop": "wine",
+        "website": "http://izaberivino.com/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4880604,
+          44.7957362
+        ]
+      },
+      "id": "node/8237804987"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8496912717",
+        "amenity": "bar",
+        "name": "Beercuz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.5017202,
+          44.8129667
+        ]
+      },
+      "id": "node/8496912717"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8522690648",
+        "addr:housenumber": "8",
+        "addr:street": "Мите Ружића",
+        "amenity": "bar",
+        "name": "Svaštara Concept Bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.5146775,
+          44.7911426
+        ]
+      },
+      "id": "node/8522690648"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/8901405675",
+        "addr:housenumber": "99a",
+        "addr:street": "Пожешка",
+        "amenity": "bar",
+        "int_name": "Nasa tajna",
+        "name": "Наша тајна",
+        "name:sr": "Наша тајна",
+        "name:sr-Latn": "Naša tajna"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4144581,
+          44.7708968
+        ]
+      },
+      "id": "node/8901405675"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9001824831",
+        "amenity": "bar",
+        "name": "Varadero",
+        "name:en": "Varadero",
+        "name:sr-Latn": "Varadero Bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.3768615,
+          44.7771645
+        ]
+      },
+      "id": "node/9001824831"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9001824843",
+        "amenity": "bar",
+        "name": "Bikini bar Ada"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.3826602,
+          44.7797397
+        ]
+      },
+      "id": "node/9001824843"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9001824851",
+        "amenity": "bar",
+        "name": "Galino Beach Bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.3898874,
+          44.7823795
+        ]
+      },
+      "id": "node/9001824851"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9091313076",
+        "amenity": "bar",
+        "check_date": "2025-09-11",
+        "name": "The Cinema Bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4668926,
+          44.8062962
+        ]
+      },
+      "id": "node/9091313076"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9325801571",
+        "amenity": "bar",
+        "check_date": "2025-06-17",
+        "name": "Smiley"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4608612,
+          44.8144619
+        ]
+      },
+      "id": "node/9325801571"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9463540417",
+        "addr:housenumber": "10",
+        "addr:street": "Жоржа Клемансоа",
+        "amenity": "bar",
+        "internet_access": "wlan",
+        "name:en": "Jazz Bar Sinatra",
+        "name:fr": "Jazz Bar Sinatra",
+        "opening_hours": "Su-Th 08:00-24:00; Fr-Sa 08:00-25:00",
+        "phone": "+381 69 2399339"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4686025,
+          44.8212477
+        ]
+      },
+      "id": "node/9463540417"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9498085462",
+        "addr:city": "Нови Београд",
+        "addr:housenumber": "80",
+        "addr:postcode": "11070",
+        "addr:street": "Булевар Зорана Ђинђића",
+        "amenity": "bar",
+        "brewery": "yes;nikšićko;jelen;lav;budweiser;laško;zaječarsko",
+        "min_age": "18",
+        "name": "Čip",
+        "name:sr": "Чип",
+        "opening_hours": "Mo-Su 10:00-22:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4182128,
+          44.8182595
+        ]
+      },
+      "id": "node/9498085462"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9646188926",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "int_name": "Ministarstvo",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "level": "0",
+        "name": "Министарство",
+        "opening_hours": "Mo-Fr 08:00-23:00, Sa 08:00-01:00, Su 10:00-22:00",
+        "outdoor_seating": "yes",
+        "smoking": "yes",
+        "toilets": "yes",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4527754,
+          44.8015511
+        ]
+      },
+      "id": "node/9646188926"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9697768298",
+        "amenity": "bar",
+        "level": "0",
+        "name": "Azra",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4687795,
+          44.8123977
+        ]
+      },
+      "id": "node/9697768298"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9712342587",
+        "amenity": "bar",
+        "name": "Bitters"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4613048,
+          44.8212854
+        ]
+      },
+      "id": "node/9712342587"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/9991553663",
+        "addr:housenumber": "76v",
+        "addr:postcode": "11073",
+        "addr:street": "Јурија Гагарина",
+        "amenity": "bar",
+        "name": "Cascada",
+        "opening_hours": "Mo-Su 08:00-24:00",
+        "ref:RS:kucni_broj": "6831170"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.3817059,
+          44.8026584
+        ]
+      },
+      "id": "node/9991553663"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10032089017",
+        "amenity": "bar",
+        "contact:instagram": "barblija",
+        "internet_access": "wlan",
+        "name": "Barblija",
+        "opening_hours": "Mo-Th 17:00-00:00; Fr-Sa 17:00-01:00",
+        "phone": "+381691103331"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4691203,
+          44.814595
+        ]
+      },
+      "id": "node/10032089017"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10068818886",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "level": "0",
+        "name": "Dnevna Soba",
+        "opening_hours": "Mo-Th 09:00-24:00; Fr 09:00-01:00; PH closed; Sa-Su 16:00-24:00",
+        "outdoor_seating": "yes",
+        "smoking": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4728225,
+          44.8049636
+        ]
+      },
+      "id": "node/10068818886"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10086211517",
+        "amenity": "bar",
+        "name": "Sprat"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.465602,
+          44.8172971
+        ]
+      },
+      "id": "node/10086211517"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10094935117",
+        "amenity": "bar",
+        "name:en": "Chillton"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4709279,
+          44.7994953
+        ]
+      },
+      "id": "node/10094935117"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10127576844",
+        "amenity": "bar",
+        "check_date": "2024-12-04",
+        "indoor_seating": "yes",
+        "name": "Irony vs. Satyr Bar Belgrade",
+        "opening_hours": "Mo-Th 09:00-23:00; Fr,Sa 09:00-24:00; Su 12:00-20:00",
+        "outdoor_seating": "yes",
+        "smoking": "outside",
+        "website:menu": "https://irony-vs-satyr-bar-belgrade.ps.me"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4606454,
+          44.8113656
+        ]
+      },
+      "id": "node/10127576844"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10174189562",
+        "addr:city": "Београд",
+        "addr:housenumber": "42",
+        "addr:postcode": "11000",
+        "addr:street": "Добрачина",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "level": "0",
+        "name": "Gvint",
+        "opening_hours": "Mo-Fr 16:00-24:00; Sa-Su 12:00-24:00; PH closed",
+        "outdoor_seating": "yes",
+        "smoking": "yes",
+        "toilets": "yes",
+        "toilets:access": "permissive",
+        "wheelchair": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4666815,
+          44.823304
+        ]
+      },
+      "id": "node/10174189562"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10229303732",
+        "addr:city": "Београд",
+        "addr:housenumber": "29d",
+        "addr:street": "Жоржа Клемансоа",
+        "amenity": "bar",
+        "check_date": "2024-05-11",
+        "indoor_seating": "yes",
+        "name": "Draft Bar",
+        "opening_hours": "Mo 16:00-24:00; Tu-Th,Su 11:00-24:00; Fr-Sa 11:00-01:30",
+        "operator": "Avanturizam doo Beograd",
+        "outdoor_seating": "yes",
+        "smoking": "yes",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4716831,
+          44.8243163
+        ]
+      },
+      "id": "node/10229303732"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10235935720",
+        "addr:housenumber": "47",
+        "addr:street": "Кнеза Данила",
+        "amenity": "bar",
+        "contact:instagram": "https://www.instagram.com/kraftrajcraftshop/",
+        "indoor_seating": "yes",
+        "name": "Kraft Rai",
+        "opening_hours": "Mo-Th 12:00-00:00, Fr-Sa 12:00-01:00, Su 18:00-00:00",
+        "outdoor_seating": "yes",
+        "smoking": "yes",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4784987,
+          44.8085352
+        ]
+      },
+      "id": "node/10235935720"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10246393510",
+        "amenity": "bar",
+        "name:en": "Ventil"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4611659,
+          44.8211612
+        ]
+      },
+      "id": "node/10246393510"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10305066188",
+        "amenity": "bar",
+        "int_name": "Klopa bar",
+        "name": "Клопа бар",
+        "opening_hours": "Mo-Fr 08:00-23:00; Sa 09:00-23:00; Su off"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4277037,
+          44.8045403
+        ]
+      },
+      "id": "node/10305066188"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10676835435",
+        "amenity": "bar",
+        "check_date": "2025-04-23",
+        "indoor_seating": "yes",
+        "name": "Craft Beer",
+        "opening_hours": "Mo-Su 15:00-23:00",
+        "outdoor_seating": "no",
+        "shop": "alcohol",
+        "smoking": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.460312,
+          44.811788
+        ]
+      },
+      "id": "node/10676835435"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10679146578",
+        "addr:housenumber": "5",
+        "addr:street": "Мосорска",
+        "amenity": "bar",
+        "check_date": "2023-02-19",
+        "name": "Uptown bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4796753,
+          44.7652219
+        ]
+      },
+      "id": "node/10679146578"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10759926888",
+        "amenity": "bar",
+        "level": "3",
+        "name": "City Garden"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4540826,
+          44.8200579
+        ]
+      },
+      "id": "node/10759926888"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10915872961",
+        "addr:city": "Београд",
+        "addr:housenumber": "21",
+        "addr:street": "Палмотићева",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "level": "-1",
+        "name": "Pravda",
+        "opening_hours": "Mo-Th,Su 08:30-24:00; Fr-Sa 08:30-01:00; PH closed",
+        "outdoor_seating": "yes",
+        "smoking": "yes",
+        "toilets": "yes",
+        "toilets:access": "permissive",
+        "toilets:wheelchair": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.468818,
+          44.8138359
+        ]
+      },
+      "id": "node/10915872961"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10951507507",
+        "addr:housenumber": "33",
+        "addr:street": "Краља Милутина",
+        "amenity": "bar",
+        "check_date": "2025-06-18",
+        "name:en": "Josephine",
+        "opening_hours": "Su-Th 09:00-00:00; Fr-Sa 09:00-01:00",
+        "payment:cash": "yes",
+        "payment:contactless": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "phone": "+38162700800",
+        "website": "https://josephinebelgrade.com/",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4664526,
+          44.8040579
+        ]
+      },
+      "id": "node/10951507507"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10951507508",
+        "amenity": "bar",
+        "name": "Beogradski Koktel Klub",
+        "name:en": "Belgrade Cocktail Club",
+        "name:sr": "Београдски Коктел Клуб",
+        "opening_hours": "Mo-Th 18:00-00:00; Fr-Sa 18:00-01:00; Su 18:30-00:00",
+        "phone": "+381112620468"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4551615,
+          44.8202572
+        ]
+      },
+      "id": "node/10951507508"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10956737788",
+        "amenity": "bar",
+        "contact:instagram": "proces.winebar",
+        "name": "Proces",
+        "name:sr": "Процес",
+        "name:sr-Latn": "Proces",
+        "opening_hours": "We-Th 18:00-00:00; Fr-Sa 18:00-01:00; Su 18:00-00:00",
+        "smoking": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4690169,
+          44.8144309
+        ]
+      },
+      "id": "node/10956737788"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/10974328092",
+        "addr:housenumber": "22",
+        "addr:street": "Скадарска",
+        "amenity": "bar",
+        "brewery": "Dogma",
+        "level": "0",
+        "name": "Dogma",
+        "opening_hours": "Mo-Su 12:00-24:00; PH closed",
+        "outdoor_seating": "yes",
+        "smoking": "yes",
+        "toilets": "yes",
+        "toilets:access": "permissive",
+        "toilets:wheelchair": "no",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4637682,
+          44.8169506
+        ]
+      },
+      "id": "node/10974328092"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11177444492",
+        "addr:city": "Београд",
+        "addr:housenumber": "45",
+        "addr:postcode": "11000",
+        "addr:street": "Молерова",
+        "amenity": "bar",
+        "name": "Ex Ponto",
+        "opening_hours": "Mo-Th 08:00-24:00, Fr,Sa 08:00-01:00, Su 08:00-24:00",
+        "operator": "VLADIMIR MILIĆ pr",
+        "payment:cards": "no",
+        "payment:cash": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4745096,
+          44.8037383
+        ]
+      },
+      "id": "node/11177444492"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11198274826",
+        "addr:housenumber": "6",
+        "addr:street": "Кумановска",
+        "amenity": "bar",
+        "check_date": "2024-07-21",
+        "name": "Nekrasova The Bar",
+        "opening_hours": "Mo-Th 14:00-00:00; Fr-Sa 14:00-01:00, Su 16:00-00:00",
+        "smoking": "outside"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4735848,
+          44.8053023
+        ]
+      },
+      "id": "node/11198274826"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11198274831",
+        "addr:housenumber": "22",
+        "addr:street": "Булевар деспота Стефана",
+        "amenity": "bar",
+        "contact:facebook": "https://www.facebook.com/club.optimist/",
+        "name": "Club Optimist",
+        "opening_hours": "Mo-Tu 08:00-23:45, We-Th 08:00-02:00; Fr 08:00-03:00; Sa 09:00-03:00; Su 12:00-23:45"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4642911,
+          44.8164256
+        ]
+      },
+      "id": "node/11198274831"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11224852837",
+        "amenity": "bar",
+        "contact:instagram": "mundo_bar10",
+        "name:en": "Mundo",
+        "opening_hours": "Mo-Th 08:00-22:00; Fr-Sa 08:00-23:00; Su 10:00-17:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.476003,
+          44.8025542
+        ]
+      },
+      "id": "node/11224852837"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11230769126",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "name": "Naše Vino",
+        "opening_hours": "Mo-Sa 09:00-22:00; PH closed",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4566503,
+          44.8041405
+        ]
+      },
+      "id": "node/11230769126"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11244186032",
+        "addr:city": "Београд",
+        "addr:housenumber": "61",
+        "addr:street": "Страхињића Бана",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "level": "0",
+        "name": "Idol",
+        "opening_hours": "Tu-Th,Su 12:00-24:00; Fr-Sa 12:00-24:00; PH closed; Mo 20:00-24:00",
+        "outdoor_seating": "yes",
+        "smoking": "yes",
+        "toilets": "yes",
+        "toilets:wheelchair": "no",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4632598,
+          44.8206341
+        ]
+      },
+      "id": "node/11244186032"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11281160926",
+        "amenity": "bar",
+        "int_name": "Vilidz bar",
+        "name": "Вилиџ бар",
+        "name:sr": "Вилиџ бар",
+        "name:sr-Latn": "Vilidž bar",
+        "opening_hours": "Mo-Su 09:00-01:00",
+        "outdoor_seating": "yes",
+        "smoking": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4785309,
+          44.8000059
+        ]
+      },
+      "id": "node/11281160926"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11286579318",
+        "addr:housenumber": "13",
+        "addr:street": "Зетска",
+        "amenity": "bar",
+        "contact:instagram": "demokratijabar",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "level": "0",
+        "name": "Demokratija bar",
+        "opening_hours": "Su-Th 15:00-24:00, Fr-Sa 15:00-25:00",
+        "outdoor_seating": "yes",
+        "phone": "+381 63 8352540",
+        "ref:RS:kucni_broj": "3209836",
+        "smoking": "outside",
+        "takeaway": "yes",
+        "toilets": "yes",
+        "toilets:wheelchair": "no",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4650934,
+          44.8171142
+        ]
+      },
+      "id": "node/11286579318"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11308300451",
+        "amenity": "bar",
+        "level": "0",
+        "name": "8 bar",
+        "outdoor_seating": "yes",
+        "toilets:wheelchair": "no",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4706882,
+          44.8251954
+        ]
+      },
+      "id": "node/11308300451"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11331990913",
+        "addr:housenumber": "86d",
+        "addr:street": "Омладинских бригада",
+        "amenity": "bar",
+        "name": "Hashtag",
+        "name:sr-Latn": "Hashtag"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4008538,
+          44.8128413
+        ]
+      },
+      "id": "node/11331990913"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11331990919",
+        "addr:housenumber": "2a",
+        "addr:street": "Капетан Мишина",
+        "air_conditioning": "yes",
+        "amenity": "bar",
+        "min_age": "18",
+        "name": "Hanky Panky",
+        "opening_hours": "Mo-Fr 18:00-23:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4597829,
+          44.8199518
+        ]
+      },
+      "id": "node/11331990919"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11336463583",
+        "amenity": "bar",
+        "check_date": "2024-08-14",
+        "contact:instagram": "vjeran_pas",
+        "int_name": "Vjeran pas",
+        "name": "Вјеран пас",
+        "name:sr": "Вјеран пас",
+        "name:sr-Latn": "Vjeran pas",
+        "opening_hours": "Su-Th 09:00-23:30, Fr-Sa 09:00-01:00",
+        "outdoor_seating": "yes",
+        "phone": "+381 11 4505017"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4683571,
+          44.8124235
+        ]
+      },
+      "id": "node/11336463583"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11342096728",
+        "amenity": "bar",
+        "check_date": "2025-05-15",
+        "contact:instagram": "https://www.instagram.com/bifebar/",
+        "indoor_seating": "yes",
+        "level": "2",
+        "name": "Bife",
+        "opening_hours": "We-Su 16:00-01:00",
+        "outdoor_seating": "yes",
+        "smoking": "outside"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4591985,
+          44.8143943
+        ]
+      },
+      "id": "node/11342096728"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11361652666",
+        "amenity": "bar",
+        "name": "Beercuz"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4858154,
+          44.8172796
+        ]
+      },
+      "id": "node/11361652666"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11446216255",
+        "addr:housenumber": "54",
+        "addr:street": "Његошева",
+        "amenity": "bar",
+        "check_date": "2023-12-23",
+        "indoor_seating": "yes",
+        "name": "Bond Bar",
+        "outdoor_seating": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4716098,
+          44.8014959
+        ]
+      },
+      "id": "node/11446216255"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11457235791",
+        "amenity": "bar",
+        "check_date": "2025-05-14",
+        "indoor_seating": "yes",
+        "int_name": "Skroz na skroz",
+        "level": "0",
+        "name": "Скроз на скроз",
+        "opening_hours": "Mo-Su 09:00-24:00",
+        "outdoor_seating": "yes",
+        "smoking": "yes",
+        "toilets": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4537674,
+          44.8138945
+        ]
+      },
+      "id": "node/11457235791"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11501093388",
+        "amenity": "bar",
+        "contact:instagram": "https://www.instagram.com/april_bar_/",
+        "int_name": "April",
+        "name": "Април",
+        "name:sr": "Април",
+        "name:sr-Latn": "April",
+        "opening_hours": "Su-Th 09:00-24:00, Fr,Sa 09:00-01:00",
+        "smoking": "outside"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4657358,
+          44.8169053
+        ]
+      },
+      "id": "node/11501093388"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11501093389",
+        "amenity": "bar",
+        "int_name": "Bluz i pivo",
+        "name": "Блуз и пиво",
+        "name:sr": "Блуз и пиво",
+        "name:sr-Latn": "Bluz i pivo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4658281,
+          44.8178414
+        ]
+      },
+      "id": "node/11501093389"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11501093390",
+        "amenity": "bar",
+        "name": "Lift"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4652537,
+          44.8175242
+        ]
+      },
+      "id": "node/11501093390"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11501093391",
+        "amenity": "bar",
+        "name": "Zgaženi golub"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4653328,
+          44.8175085
+        ]
+      },
+      "id": "node/11501093391"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11524395720",
+        "amenity": "bar",
+        "internet_access": "wlan",
+        "name": "Cafe Crveni",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4791528,
+          44.8018422
+        ]
+      },
+      "id": "node/11524395720"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11589900593",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "name": "Simple bar",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4604062,
+          44.811014
+        ]
+      },
+      "id": "node/11589900593"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11704710360",
+        "addr:city": "Београд",
+        "addr:housenumber": "3a",
+        "addr:street": "Синђелићева",
+        "amenity": "bar",
+        "check_date": "2024-07-05",
+        "contact:instagram": "https://www.instagram.com/fominbarbeograd/",
+        "indoor_seating": "yes",
+        "level": "0",
+        "name": "Fomin",
+        "opening_hours": "Mo-Th,Su 12:00-24:00; Fr-Sa 12:00-01:00",
+        "operator": "FOMIN BAR d.o.o.",
+        "outdoor_seating": "yes",
+        "smoking": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4792508,
+          44.8025897
+        ]
+      },
+      "id": "node/11704710360"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11737202733",
+        "addr:city": "Београд",
+        "addr:housenumber": "1",
+        "addr:street": "Церска",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "name": "Mehanika Go",
+        "opening_hours": "Tu-Su 15:00-23:00",
+        "outdoor_seating": "no",
+        "smoking": "yes",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4775432,
+          44.7961904
+        ]
+      },
+      "id": "node/11737202733"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11751445949",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "internet_access": "wlan",
+        "internet_access:fee": "no",
+        "level": "0",
+        "name": "Null Social Lab",
+        "opening_hours": "Mo-Th,Su 19:00-24:00; Fr,Sa 19:00-01:00",
+        "outdoor_seating": "no",
+        "smoking": "no",
+        "toilets": "yes",
+        "website": "https://nullsociallab.com",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4601542,
+          44.812506
+        ]
+      },
+      "id": "node/11751445949"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11812618099",
+        "addr:city": "Београд",
+        "addr:housenumber": "5",
+        "addr:street": "Капетан Мишина",
+        "amenity": "bar",
+        "contact:instagram": "https://www.instagram.com/cilim.bar/",
+        "description": "wine, cocktails and food",
+        "min_age": "18",
+        "mobile": "+381668066808",
+        "name": "Ћилим бар",
+        "name:sr": "Ћилим бар",
+        "name:sr-Latn": "Ćilim bar",
+        "opening_hours": "We,Th,Su 17:00-00:00; Fr,Sa 17:00-01:00",
+        "smoking": "outside"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.459746,
+          44.8201844
+        ]
+      },
+      "id": "node/11812618099"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11834674577",
+        "amenity": "bar",
+        "contact:instagram": "https://www.instagram.com/fidel_dorcol/",
+        "int_name": "Brat Fidel",
+        "name": "Брат Фидел",
+        "name:sr": "Брат Фидел",
+        "name:sr-Latn": "Brat Fidel",
+        "smoking": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4561006,
+          44.824351
+        ]
+      },
+      "id": "node/11834674577"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11897531775",
+        "amenity": "bar",
+        "check_date": "2024-05-11",
+        "name": "Vespa bar by Sospeso",
+        "opening_hours": "Mo-Fr 10:00-01:00",
+        "operator": "Sospeso doo"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4705009,
+          44.8253575
+        ]
+      },
+      "id": "node/11897531775"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11897531777",
+        "amenity": "bar",
+        "check_date": "2024-05-11",
+        "name": "Kaldrma Gastro Bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4702136,
+          44.8255851
+        ]
+      },
+      "id": "node/11897531777"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/11922009115",
+        "amenity": "bar",
+        "int_name": "Milagro Tapas Bar",
+        "name": "Милагро Тапас Бар",
+        "name:sr": "Милагро Тапас Бар",
+        "name:sr-Latn": "Milagro Tapas Bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4129297,
+          44.8485213
+        ]
+      },
+      "id": "node/11922009115"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12022526727",
+        "amenity": "bar",
+        "mapillary": "1067422274750018",
+        "name": "Soliter",
+        "name:sr": "Солитер",
+        "opening_hours": "Mo-Su 06:00-23:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4750421,
+          44.7598783
+        ]
+      },
+      "id": "node/12022526727"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12032993622",
+        "amenity": "bar",
+        "check_date": "2025-08-21",
+        "level": "-1",
+        "name": "Ethera",
+        "opening_hours": "Mo-Tu off; We-Th,Su 17:00-24:00; Fr-Sa 18:00-01:00",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4571356,
+          44.8166832
+        ]
+      },
+      "id": "node/12032993622"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12050814193",
+        "amenity": "bar",
+        "check_date": "2025-09-03",
+        "level": "0",
+        "name": "Koi Bar"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4634745,
+          44.8167564
+        ]
+      },
+      "id": "node/12050814193"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12055104022",
+        "amenity": "bar",
+        "check_date": "2024-07-15",
+        "int_name": "Mileva bar",
+        "name": "Милева бар",
+        "name:sr": "Милева бар",
+        "name:sr-Latn": "Mileva bar",
+        "opening_hours": "09:00-23:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.3649368,
+          44.8000093
+        ]
+      },
+      "id": "node/12055104022"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12068261369",
+        "addr:housenumber": "19",
+        "addr:postcode": "11000",
+        "addr:street": "Жоржа Клемансоа",
+        "amenity": "bar",
+        "name": "Belgrade Urban Distillery",
+        "opening_hours": "Mo-Fr 08:00-22:00; Sa 16:00-22:00",
+        "website": "https://belgrade-distillery.com"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4688465,
+          44.8220954
+        ]
+      },
+      "id": "node/12068261369"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12070159267",
+        "addr:city": "Београд",
+        "addr:housenumber": "53",
+        "addr:street": "Краља Милутина",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "name": "Bruno",
+        "opening_hours": "Mo-Th 17:00-23:00, Fr 17:00-01:00, Sa 15:00-01:00, Su 15:00-23:00",
+        "outdoor_seating": "yes",
+        "phone": "+381611587983",
+        "smoking": "outside",
+        "website:menu": "https://oddmenu.com/p/bruno-bar-beograd",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4644116,
+          44.8023749
+        ]
+      },
+      "id": "node/12070159267"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12083320099",
+        "amenity": "bar",
+        "int_name": "Anker",
+        "name": "Анкер",
+        "name:sr": "Анкер",
+        "name:sr-Latn": "Anker"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4135108,
+          44.8445236
+        ]
+      },
+      "id": "node/12083320099"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12101831621",
+        "amenity": "bar",
+        "contact:facebook": "https://www.facebook.com/emilygardenbar/",
+        "mapillary": "516435090918906",
+        "mobile": "0612278714",
+        "name": "Emily Garden Bar",
+        "opening_hours": "Mo-Su 08:00-23:00",
+        "operator": "Tipsarević teniska akademija"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.5082108,
+          44.7941174
+        ]
+      },
+      "id": "node/12101831621"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12131426598",
+        "amenity": "bar",
+        "check_date": "2025-05-15",
+        "indoor_seating": "yes",
+        "name": "Supertramp",
+        "opening_hours": "Mo-Th,Su 12:00-24:00; Fr-Sa 12:00-01:00",
+        "outdoor_seating": "yes",
+        "smoking": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4582875,
+          44.8148946
+        ]
+      },
+      "id": "node/12131426598"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12147951075",
+        "amenity": "bar",
+        "check_date": "2024-08-31",
+        "name": "Gentleman"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4795636,
+          44.7687283
+        ]
+      },
+      "id": "node/12147951075"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12184021330",
+        "addr:floor": "G",
+        "addr:housenumber": "61a",
+        "addr:street": "Карађорђева",
+        "amenity": "bar",
+        "check_date": "2025-05-05",
+        "int_name": "Zurba",
+        "level": "0",
+        "name": "Журба",
+        "name:sr": "Журба",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4528657,
+          44.8130322
+        ]
+      },
+      "id": "node/12184021330"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12234725604",
+        "amenity": "bar",
+        "name": "Godfather"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4569737,
+          44.8168161
+        ]
+      },
+      "id": "node/12234725604"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12247123901",
+        "amenity": "bar",
+        "name": "Bar Barić",
+        "opening_hours": "Su-Th 18:00-00:00; Fr-Sa 18:00-01:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4135889,
+          44.7764309
+        ]
+      },
+      "id": "node/12247123901"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12269879601",
+        "amenity": "bar",
+        "check_date": "2025-04-28",
+        "name": "Axiom",
+        "opening_hours": "Mo-Th,Su 12:00-24:00; Fr-Sa 12:00-01:00",
+        "smoking": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4585483,
+          44.8205433
+        ]
+      },
+      "id": "node/12269879601"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12309517122",
+        "amenity": "bar",
+        "check_date": "2024-11-03",
+        "int_name": "Vinoteka",
+        "name": "Винотека"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4691315,
+          44.7950655
+        ]
+      },
+      "id": "node/12309517122"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12338983642",
+        "addr:city": "Београд",
+        "addr:country": "RS",
+        "addr:housenumber": "3",
+        "addr:postcode": "11000",
+        "addr:street": "Милована Миловановића",
+        "air_conditioning": "yes",
+        "amenity": "bar",
+        "brewery": "yes;various",
+        "contact:facebook": "https://www.facebook.com/profile.php?id=61567174970720",
+        "cuisine": "european",
+        "description": "Ne ta dver – вински бар с српским винима. Аутентичност и квалитет који ће вас одвести на прави пут.",
+        "image": "https://static.tildacdn.com/tild3862-3637-4133-b964-663932663565/Interior3.JPG",
+        "level": "0",
+        "min_age": "18",
+        "name": "Ne ta dver",
+        "opening_hours": "Tu-Su 14:00-23:00",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "smoking": "no",
+        "start_date": "2025-05-22",
+        "website": "https://netadver.rs"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4578592,
+          44.8091744
+        ]
+      },
+      "id": "node/12338983642"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12349017523",
+        "addr:housenumber": "4",
+        "addr:street": "Краља Милана",
+        "amenity": "bar",
+        "name": "Neka Bar",
+        "opening_hours": "Su-Th 16:00-24:00; Fr-Sa 16:00-01:00",
+        "smoking": "outside"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.461925,
+          44.8108989
+        ]
+      },
+      "id": "node/12349017523"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12349062592",
+        "addr:city": "Београд",
+        "addr:housenumber": "6",
+        "addr:postcode": "11000",
+        "addr:street": "Кичевска",
+        "amenity": "bar",
+        "name": "Kunst Wine Bar",
+        "opening_hours": "We-Su 17:00-23:00",
+        "smoking": "outside"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4737425,
+          44.804113
+        ]
+      },
+      "id": "node/12349062592"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12492155870",
+        "amenity": "bar",
+        "name": "Vronski"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4691681,
+          44.7948698
+        ]
+      },
+      "id": "node/12492155870"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12570683123",
+        "amenity": "bar",
+        "contact:instagram": "https://www.instagram.com/_septem.bar/",
+        "int_name": "septemBar",
+        "name": "септемБар",
+        "name:sr": "септемБар",
+        "opening_hours": "Su-Th 08:00-24:00; Fr-Sa 08:00-01:00",
+        "smoking": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4078662,
+          44.8442421
+        ]
+      },
+      "id": "node/12570683123"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12601268400",
+        "amenity": "bar",
+        "indoor_seating": "yes",
+        "name": "All Star",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4913801,
+          44.8156852
+        ]
+      },
+      "id": "node/12601268400"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12641161594",
+        "addr:city": "Београд",
+        "addr:housenumber": "6",
+        "addr:postcode": "11120",
+        "addr:street": "Таковска",
+        "air_conditioning": "yes",
+        "amenity": "bar",
+        "email": "t6belgrade@gmail.com",
+        "internet_access": "wlan",
+        "level": "0",
+        "min_age": "18",
+        "name": "T6 cocktail bar",
+        "opening_hours": "We-Th 16:00-00:00, Fr-Sa 17:00-01:00, Su 16:00-00:00",
+        "payment:apple_pay": "yes",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "payment:google_pay": "yes",
+        "payment:mastercard": "yes",
+        "payment:visa": "yes",
+        "short_name": "T6",
+        "smoking": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4693302,
+          44.8116276
+        ]
+      },
+      "id": "node/12641161594"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12643597841",
+        "addr:floor": "G",
+        "amenity": "bar",
+        "check_date": "2025-03-07",
+        "int_name": "Vinoteka",
+        "level": "0",
+        "name": "Винотека"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4518076,
+          44.8137927
+        ]
+      },
+      "id": "node/12643597841"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12643679220",
+        "addr:housenumber": "28",
+        "addr:street": "Цара Душана",
+        "amenity": "bar",
+        "check_date": "2025-03-07",
+        "contact:instagram": "https://www.instagram.com/matesbelgrade/",
+        "name": "Mates",
+        "opening_hours": "Mo-Fr 07:30-20:00; Sa 09:00-20:00",
+        "phone": "+381 63627300",
+        "smoking": "outside"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4590395,
+          44.8237266
+        ]
+      },
+      "id": "node/12643679220"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12691405214",
+        "amenity": "bar",
+        "check_date": "2025-03-22",
+        "level": "-1",
+        "name": "Buratina",
+        "opening_hours": "Mo-Th,Su 17:00-24:00; Fr-Sa 17:00-01:00",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "smoking": "outside",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.46969,
+          44.8127022
+        ]
+      },
+      "id": "node/12691405214"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12698275961",
+        "amenity": "bar",
+        "contact:instagram": "https://www.instagram.com/mehuric.rs/",
+        "name": "Mehurić",
+        "smoking": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4712304,
+          44.8122568
+        ]
+      },
+      "id": "node/12698275961"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12714705777",
+        "addr:housenumber": "33",
+        "addr:street": "Венизелосова",
+        "amenity": "bar",
+        "name": "Soho Lounge & Bar",
+        "website": "https://soho.restoplace.ws/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4735261,
+          44.8201648
+        ]
+      },
+      "id": "node/12714705777"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12714705779",
+        "addr:city": "Београд",
+        "addr:housenumber": "3a",
+        "addr:postcode": "11000",
+        "addr:street": "Синђелићева",
+        "amenity": "bar",
+        "contact:instagram": "bobo.beograd",
+        "delivery": "yes",
+        "delivery:partner": "Wolt",
+        "internet_access": "wlan",
+        "name": "Bobo Boucher et Botanist",
+        "opening_hours": "Mo-Th,Su 12:00-23:00; Fr-Sa 12:00-01:00",
+        "operator": "RESTAMAMA d.o.o.",
+        "pets_allowed": "yes",
+        "phone": "+381 60 3226994;+381 61 1361914",
+        "smoking": "outside",
+        "website:orders": "https://wolt.com/en/srb/belgrade/restaurant/bobo-boucher-et-botanist"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4792769,
+          44.8026125
+        ]
+      },
+      "id": "node/12714705779"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12790155919",
+        "amenity": "bar",
+        "check_date": "2025-04-26",
+        "name": "Tegla bar",
+        "opening_hours": "Mo-Sa 08:00-20:00; Su 09:00-18:30",
+        "operator": "Strafta bar d.o.o."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.3674883,
+          44.8356695
+        ]
+      },
+      "id": "node/12790155919"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12790155925",
+        "addr:housenumber": "5",
+        "addr:street": "Гетеова",
+        "amenity": "bar",
+        "check_date": "2025-04-26",
+        "contact:instagram": "prestige_lounge.bar",
+        "name": "Prestige Lounge Bar",
+        "opening_hours": "Mo-Th 08:00-24:00; Fr-Su 08:00-01:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.3766286,
+          44.8418602
+        ]
+      },
+      "id": "node/12790155925"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12790155936",
+        "amenity": "bar",
+        "check_date": "2025-04-26",
+        "contact:instagram": "barkafeterijazaga",
+        "name": "Zaga",
+        "opening_hours": "Mo-Sa 08:00-24:00; Su 09:00-23:00",
+        "outdoor_seating": "yes",
+        "phone": "+381 65 5622525"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.3811189,
+          44.8426913
+        ]
+      },
+      "id": "node/12790155936"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12821265891",
+        "amenity": "bar",
+        "check_date": "2025-06-02",
+        "name": "Guvernanta",
+        "opening_hours": "Mo-Th,Su 13:00-24:00; Fr-Sa 13:00-01:00",
+        "smoking": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4601672,
+          44.8124479
+        ]
+      },
+      "id": "node/12821265891"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12830603410",
+        "amenity": "bar",
+        "check_date": "2025-05-12",
+        "int_name": "Krik Dusi",
+        "name": "Крик Души",
+        "opening_hours": "Mo-Sa 08:00-24:00, Su 09:00-23:00",
+        "smoking": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.460272,
+          44.8114923
+        ]
+      },
+      "id": "node/12830603410"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12840369800",
+        "amenity": "bar",
+        "int_name": "Ruke",
+        "level": "0",
+        "name": "Руке",
+        "name:sr": "Руке",
+        "name:sr-Latn": "Ruke",
+        "outdoor_seating": "yes",
+        "toilets:wheelchair": "no",
+        "wheelchair": "limited"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4709403,
+          44.8250072
+        ]
+      },
+      "id": "node/12840369800"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12851089460",
+        "amenity": "bar",
+        "name": "Bar Leposava",
+        "opening_hours": "Mo-Su 10:00-00:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4503102,
+          44.8185104
+        ]
+      },
+      "id": "node/12851089460"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12863319681",
+        "addr:housenumber": "2v",
+        "addr:street": "Првомајска",
+        "amenity": "bar",
+        "check_date": "2025-05-25",
+        "cuisine": "coffee_shop",
+        "name": "Casa 2",
+        "opening_hours": "08:00-24:00",
+        "operator": "Jovana Bura pr."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.3959286,
+          44.8413159
+        ]
+      },
+      "id": "node/12863319681"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12872020317",
+        "amenity": "bar",
+        "check_date": "2025-05-28",
+        "indoor_seating": "yes",
+        "name": "Englez",
+        "outdoor_seating": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4046428,
+          44.8508485
+        ]
+      },
+      "id": "node/12872020317"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12872020334",
+        "amenity": "bar",
+        "check_date": "2025-05-28",
+        "name": "Taurunum",
+        "opening_hours": "08:00-24:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4111225,
+          44.8487837
+        ]
+      },
+      "id": "node/12872020334"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/12900355831",
+        "amenity": "bar",
+        "name": "Rodina",
+        "opening_hours": "Mo-Th,Su 12:00-24:00; Fr-Sa 12:00-01:00",
+        "smoking": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4540673,
+          44.8281202
+        ]
+      },
+      "id": "node/12900355831"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13001087601",
+        "addr:housenumber": "15",
+        "addr:street": "Мачванска",
+        "amenity": "bar",
+        "contact:instagram": "bar.logika",
+        "name": "Logika",
+        "opening_hours": "Mo-Su 17:30-01:00",
+        "phone": "069782292"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4730492,
+          44.7973706
+        ]
+      },
+      "id": "node/13001087601"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13004182977",
+        "amenity": "bar",
+        "check_date": "2025-07-16",
+        "name": "Pizzino"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4663874,
+          44.8050153
+        ]
+      },
+      "id": "node/13004182977"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13030427932",
+        "addr:floor": "2",
+        "amenity": "bar",
+        "check_date": "2025-07-27",
+        "level": "2",
+        "name": "Kissa10",
+        "outdoor_seating": "no",
+        "payment:cash": "yes",
+        "payment:credit_cards": "yes",
+        "payment:debit_cards": "yes",
+        "smoking": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4630053,
+          44.8198925
+        ]
+      },
+      "id": "node/13030427932"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13039321639",
+        "amenity": "bar",
+        "contact:instagram": "https://www.instagram.com/kik.billiard/",
+        "name": "Kik",
+        "opening_hours": "10:00-00:00"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4521858,
+          44.810236
+        ]
+      },
+      "id": "node/13039321639"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13045598704",
+        "amenity": "bar",
+        "name": "Wine Passage Bar & Shop"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4581235,
+          44.8162731
+        ]
+      },
+      "id": "node/13045598704"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13050747701",
+        "amenity": "bar",
+        "name": "Noble Roots"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.461013,
+          44.8174856
+        ]
+      },
+      "id": "node/13050747701"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13052188239",
+        "addr:city": "Београд",
+        "addr:housenumber": "3",
+        "addr:postcode": "11000",
+        "addr:street": "Невесињска",
+        "amenity": "bar",
+        "contact:instagram": "vidavracar",
+        "name": "Vida Wine&Tapas",
+        "opening_hours": "Mo-Th 09:00-00:00; Fr 09:00-01:00; Sa 10:00-01:00; Su off",
+        "operator": "LAVIMA d.o.o.",
+        "outdoor_seating": "yes",
+        "pets_allowed": "yes",
+        "phone": "+381628936932",
+        "smoking": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4729736,
+          44.7994705
+        ]
+      },
+      "id": "node/13052188239"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13052188240",
+        "addr:city": "Београд",
+        "addr:housenumber": "3",
+        "addr:postcode": "11000",
+        "addr:street": "Невесињска",
+        "amenity": "bar",
+        "contact:instagram": "la_bar_belgrade",
+        "name": "La Bar",
+        "opening_hours": "Mo-Su 08:00-00:00",
+        "outdoor_seating": "yes",
+        "pets_allowed": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4730365,
+          44.7995012
+        ]
+      },
+      "id": "node/13052188240"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13069550082",
+        "addr:city": "Београд",
+        "addr:housenumber": "12",
+        "addr:postcode": "11000",
+        "addr:street": "Курсулина",
+        "amenity": "bar",
+        "contact:facebook": "https://www.facebook.com/people/Wine-Fine-Beograd/61575886383357/",
+        "contact:instagram": "wineandfine_belgrade",
+        "email": "wineandfine777@gmail.com",
+        "name": "Wine & Fine",
+        "opening_hours": "Mo-Th 08:00-00:00; Fr-Sa 08:00-01:00; Su off",
+        "phone": "+381 61 1315483",
+        "start_date": "2025-04-21",
+        "wheelchair": "no"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4728258,
+          44.7999888
+        ]
+      },
+      "id": "node/13069550082"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13074074409",
+        "amenity": "bar",
+        "int_name": "Zlatna ribica",
+        "name": "Златна рибица"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4003012,
+          44.7849674
+        ]
+      },
+      "id": "node/13074074409"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13084694904",
+        "addr:city": "Београд",
+        "addr:housenumber": "16",
+        "addr:postcode": "11000",
+        "addr:street": "Молерова",
+        "amenity": "bar",
+        "contact:instagram": "delicebeograd",
+        "name": "Delice",
+        "opening_hours": "Mo-Tu 09:00-14:00; Fr-Sa 09:00-01:00; Su 09:00-24:00",
+        "operator": "VTMN d.o.o.",
+        "outdoor_seating": "yes",
+        "payment:cards": "yes",
+        "payment:cash": "yes",
+        "phone": "+381 11 7495573"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4715091,
+          44.8010221
+        ]
+      },
+      "id": "node/13084694904"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13116742217",
+        "amenity": "bar",
+        "check_date": "2025-09-03",
+        "name": "Jašta"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4621862,
+          44.8142053
+        ]
+      },
+      "id": "node/13116742217"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13134342724",
+        "amenity": "bar",
+        "name": "Fresca"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.463005,
+          44.819968
+        ]
+      },
+      "id": "node/13134342724"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/13147938907",
+        "amenity": "bar",
+        "check_date": "2025-09-16",
+        "name": "Skart"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          20.4627138,
+          44.8205466
+        ]
+      },
+      "id": "node/13147938907"
+    }
+  ]
+}

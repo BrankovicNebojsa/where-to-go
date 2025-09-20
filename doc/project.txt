@@ -1,0 +1,210 @@
+LOGIN FIRST AND GET SOME INFORMATION ON THE PERSON (LOCATION, WHEELCHAIR STATUS, ETC)
+
+
+(0 BEGIN)
+Welcome to WhereToGo, Nebojsa (&arg1 = username)
+What can I do for you today?
+
+1. Find a place to go today (Go to A)
+2. Leave a review (Go to B)
+3. Check history (Go to C)
+4. Edit profile (Go to D)
+0. Exit
+(0 END)
+
+(A BEGIN)
+Do you already have a type of place in mind for today’s outing?
+
+1. Yes
+2. No
+0. Back
+(A END)
+
+(A1 BEGIN)
+
+Great! Which type of place are you interested in today? 
+Please choose one:
+
+1. Restaurant
+2. Bar
+3. Cafe
+4. Pub
+5. Casino
+6. Library
+7. Theatre
+8. Cinema
+9. Nightclub
+0. Back
+(A1 END)
+
+(A2 BEGIN)
+That's okay!
+What would you prefer?
+
+1. Suggest 5 random places
+2. Give bespoke suggestion after couple of questions
+0. Back
+(A2 END)
+
+(A22)
+Awesome, let's see what you would prefer through a couple of questions!
+Are you looking for a place to eat/drink or to relax/watch something?
+
+1. Eat/Drink
+2. Relax/Watch (theatre, cinema, library)
+0. Back
+(A22 END)
+
+(A221 BEGIN)
+Eat/Drink it is!
+Do you want a quiet place or a lively place?
+
+1. Quite (restaurant, cafe)
+2. Lively
+0. Back
+(A221 END)
+
+(A2212 BEGIN)
+Let's find some lively place for you!
+What kind of experience are you looking for?
+
+1. Drinks & Chatting (bar, pub)
+2. Party & Adrenaline (casino, nightclub)
+0. Back
+(A2212 END)
+
+(A11, A12, A13, A14, A15, A16, A17, A18, A19, A21, A222, A2211, A22121, A22122 BEGIN)
+Here are 5 suggested places where you can go today:
+
+1. Place 1
+2. Place 2
+3. Place 3
+4. Place 4
+5. Place 5
+0. Exit
+(A11, A12, A13, A14, A15, A16, A17, A18, A19, A21, A222, A2211, A22121, A22122 END)
+
+(B BEGIN)
+Please type a name of a place so I can find it in your history (you can only type in some part of the name):
+
+*place where he will type a name*
+(B END)
+
+(B OPTION NO HISTORY, 1 ENTRY BEGIN)
+It looks like this place isn't in your history.
+Would you like me to add it to your list?
+
+1. Yes
+2. No
+0. Back
+
+(IF 1, SAVE TO HISTORY AND THEN TRIGGER (B OPTION HISTORY EXISTS, 1 ENTRY))
+(IF 2, GO 0 (MAIN MENU))
+(B OPTION NO HISTORY, 1 ENTRY END)
+
+(B OPTION MORE ENTRIES BEGIN)
+Looks like there are more entries for the pattern you entered.
+
+- Place 1
+- Place 2
+- Place 3
+
+(TRIGGER B TO SHOW SO HE CAN ENTER AGAIN)
+(B OPTION NO HISTORY, MORE ENTRIES END)
+
+(B OPTION HISTORY EXISTS, 1 ENTRY BEGIN)
+Awesome! Now that we found the place, let's leave a review!
+
+How would you rate *place_name* (1-5)?
+
+*place where he will type a rating*
+(EXCEPTION HANDLING IF IT's NOT INTEGER OR IT'S NOT FROM 1-5)
+
+(AFTER HE ENTERED A RATING WE ASK FOR DESCRIPTION)
+Leave a comment for you review:
+
+*place where he will type a comment*
+
+(AFTER HE ENTERED A COMMENT)
+Awesome! Thanks for leaving a review for *place_name* so others can see.
+(TRIGGER 0 (MAIN MENU))
+(B OPTION HISTORY EXISTS, 1 ENTRY END)
+
+(C BEGIN)
+Here is the list of places you visited:
+
+- Place 1
+- Place 2
+- Place 3
+- Place 4
+- Place 5
+
+(TRIGGER 0 (MAIN MENU))
+(C END)
+
+(D BEGIN)
+This is your current profile information:
+
+Username: *actual_username*
+Location: *actual_address*
+Wheelchair status: *actual_wheelchair_status*
+
+Which data would you like to change?
+
+1. Username
+2. Location
+3. Wheelchair status
+0. Back
+(D END)
+
+(D1 BEGIN)
+Enter new username:
+
+*place to enter username*
+
+(AFTER HE ENTERS ANYTHING BUT 0 ASK)
+Are you sure you want to change username to *new_username*?
+
+1. Yes
+2. No (Exit)
+
+Your username has been changed to *new_username*!
+(Go to 0 (Main Menu))
+(D1 END)
+
+(D2 BEGIN)
+Enter new location:
+
+*place to enter location*
+
+(AFTER HE ENTERS ANYTHING BUT 0 ASK)
+Are you sure you want to change location to *new_location*?
+
+1. Yes
+2. No (Exit)
+
+Your location has been changed to *new_location*!
+(Go to 0 (Main Menu))
+(D2 END)
+
+(D3 BEGIN)
+Select a new wheelchair status:
+
+1. Yes
+2. No
+0. Exit
+
+(AFTER HE ENTERS ANYTHING BUT 0 ASK)
+Are you sure you want to change your wheelchair status to *new_wheelchair_status*?
+
+1. Yes
+2. No (Exit)
+
+Your wheelchair_status has been changed to *new_wheelchair_status*!
+(Go to 0 (Main Menu))
+(D3 END)
+
+****************************************************************************************************
+
+I need to add a way to rate places, and do it in such way that user1 can see all the other reviews from different people and not just his/hers (only the average rating)
+
