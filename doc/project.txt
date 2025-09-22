@@ -76,12 +76,47 @@ What kind of experience are you looking for?
 (A11, A12, A13, A14, A15, A16, A17, A18, A19, A21, A222, A2211, A22121, A22122 BEGIN)
 Here are 5 suggested places where you can go today:
 
-1. Place 1
-2. Place 2
-3. Place 3
-4. Place 4
-5. Place 5
+NR  Name        Type        Distance    Rating  Address 
+1.  Place 1     restaurant  1.3km       4.5     Zemun Glavna 31, Zemun
+2.  Place 2     restaurant  1.6km       N/A     Nikole Tesle 11, Novi Beograd
+3.  Place 3     bar         1.5km       4.3     Bezanijska 15, Zemun
+4.  Place 4     bar         1.9km       N/A     Gradski park 1, Zemun
+5.  Place 5     nightclub   0.7km       4.7     Zemunska 13, Zemun
+0.  Back
+
+(AFTER A NUMBER 1-5 was entered)
+
+Here is some more information about Place1:
+
+Name: Place 1
+Type: restaurant
+Distance: 1.3 km
+Rating: 4.5
+Address: Zemun Glavna 31, Zemun
+Wheelchair: N/A
+
+Reviews:
+
+user1 left a 4.0 review
+- It was good but the lighting is too dim for my liking.
+
+user 2 left a 4.5 review
+- Food is great
+
+user 3 left a 5.0 review
+- Superb restaurant
+
+user 4 left a 4.3 review
+- Okay
+
+user 5 left a 4.7 review
+- Awesome restaurant
+
+1. Back
 0. Exit
+
+Choose an option:
+
 (A11, A12, A13, A14, A15, A16, A17, A18, A19, A21, A222, A2211, A22121, A22122 END)
 
 (B BEGIN)
