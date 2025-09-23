@@ -6,41 +6,45 @@
 (def db (c/open-database! "data/database"))
 
 ;; THIS WAS USED TO POPULATE PLACES IN DB
-;; ;; Function to transform a single feature into your schema
-;; (defn feature->place [feature]
-;;   (let [props  (:properties feature)
-;;         coords (get-in feature [:geometry :coordinates])]
-;;     {:place_id         (or (:id feature) (get props "@id"))
-;;      :amenity_type     (:amenity props)
-;;      :name             (:name props)
-;;      :lat_coordinate   (second coords)
-;;      :long_coordinate  (first coords)
-;;      :wheelchair (:n props)}))
+;; Function to transform a single feature into your schema
+(defn feature->place [feature]
+  (let [props  (:properties feature)
+        coords (get-in feature [:geometry :coordinates])]
+    {:place_id         (or (:id feature) (get props "@id"))
+     :amenity_type     (:amenity props)
+     :name             (:name props)
+     :lat_coordinate   (second coords)
+     :long_coordinate  (first coords)
+     :wheelchair (:n props)}))
 
-;; ;; Function to load a JSON file and extract places
-;; (defn load-json-file [file-path]
-;;   (with-open [r (io/reader file-path)]
-;;     (let [data (json/parse-stream r true)] ;; keywordize keys
-;;       (map feature->place (:features data)))))
+;; Function to load a JSON file and extract places
+(defn load-json-file [file-path]
+  (with-open [r (io/reader file-path)]
+    (let [data (json/parse-stream r true)] ;; keywordize keys
+      (map feature->place (:features data)))))
 
-;; ;; Load all your JSON files (bar.json, cafe.json, etc.)
-;; (def files ["data/bar.json"
-;;             "data/cafe.json"
-;;             "data/restaurant.json"
-;;             "data/casino.json"
-;;             "data/cinema.json"
-;;             "data/library.json"
-;;             "data/nightclub.json"
-;;             "data/pub.json"
-;;             "data/theatre.json"])
+;; Load all your JSON files (bar.json, cafe.json, etc.)
+(def files ["data/bar.json"
+            "data/cafe.json"
+            "data/restaurant.json"
+            "data/casino.json"
+            "data/cinema.json"
+            "data/library.json"
+            "data/nightclub.json"
+            "data/pub.json"
+            "data/theatre.json"])
 
-;; (defn load-all-places []
-;;   (mapcat load-json-file files))
+(defn load-all-places []
+  (mapcat load-json-file files))
 
-;; ;; Save into Codax DB under key :places
-;; (defn save-places! []
-;;   (let [places (vec (load-all-places))]
-;;     (c/assoc-at! db [:places] places)))
+;; Save into Codax DB under key :places
+(defn save-places! []
+  (let [places (vec (load-all-places))]
+    (c/assoc-at! db [:places] places)))
+
+;; Get all places from db
+(defn get-all-places []
+  (c/get-at! db [:places]))
 
 ;; Read the places back
 (def loaded-places (c/get-at! db [:places]))

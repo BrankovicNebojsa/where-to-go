@@ -26,7 +26,7 @@
       "type": "Feature",
       "properties": {
         "@id": "node/475359994",
-        "amenity": "restaurant",
+        "amenity": "restaurant", 
         "int_name": "Deverike",
         "name": "Деверике",
         "name:sr": "Деверике",

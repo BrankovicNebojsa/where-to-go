@@ -5,6 +5,7 @@
             :url "https://www.eclipse.org/legal/epl-2.0/"}
   :dependencies [[org.clojure/clojure "1.11.1"]
                  [codax "1.4.3"]
+                 [clj-http "3.12.3"]
                  [cheshire "5.13.0"]]
   :main ^:skip-aot where-to-go.core
   :target-path "target/%s"

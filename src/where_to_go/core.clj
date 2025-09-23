@@ -1,15 +1,19 @@
 (ns where-to-go.core
     (:gen-class)
     (:require [clojure.string :as str]
+              [clj-http.client :as client]
+              [cheshire.core :as json]
               [where-to-go.data :as data]))
 
 ;; --- Data storage ---
 (def users (atom {})) ;; username -> {:location "N/A", :wheelchair false, :history []} 
 (def places (atom {})) ;; place-name -> [{:username "user1", :rating 4, :comment "Nice"} ...]
 (def current-user (atom nil))
+(def current-places (atom []))
+(def user-agent "MyWhereToGoApp/1.0 (n.brankovic99@gmail.com)")
 
 ;; --- Helpers ---
-(defn get-input [prompt] 
+(defn get-input [prompt]
   (println prompt)
   (print "> ") (flush)
       (read-line))
@@ -45,7 +49,8 @@
         (println "Welcome back," (:username user)))
       ;; user not found, create new
       (do
-        (println "This is your first time using WhereToGo. Please enter your data so we can find the best place for you.")
+        (println "This is your first time using WhereToGo. 
+                  Please enter your data so we can find the best place for you.")
         (let [street-name (get-input "\nStreet name:")
               street-number (read-int "\nStreet number:" pos?)
               city (get-input "\nCity:")
@@ -127,22 +132,236 @@
     (println "Your visited places:")
     (doseq [p history] (println "- " p))))
 
-;; --- Find a place ---
+(defn format-address [addr]
+  (str (or (:road addr) "")
+       " " (or (:house_number addr) "")
+       ", " (or (:city addr) "")))
+
+(defn get-address-from-coordinates [lat lon]
+  (let [url "https://nominatim.openstreetmap.org/reverse"
+        params {"format" "json"
+                "lat" (str lat)
+                "lon" (str lon)
+                "zoom" "18"
+                "addressdetails" "1"}
+        response (client/get url
+                             {:headers {"User-Agent" user-agent}
+                              :query-params params
+                              :as :json
+                              :throw-exceptions false})
+        status (:status response)]
+    (if (= 200 status)
+      (let [addr (get-in response [:body :address])]
+        (if addr
+          (format-address addr)
+          (or (get-in response [:body :display_name])
+              "Unknown address")))
+      (do
+        (println "API call failed with status:" status "body:" (:body response))
+        "Unknown address"))))
+
+
+(defn show-place-details [place]
+  (println "\nHere is some more information:")
+  (println "Name:" (:name place))
+  (println "Type:" (name (:amenity_type place)))
+  (println "Distance:" (:distance place))
+  (println "Rating:" (or (:rating place) "N/A"))
+  (println "Address:" (:address place))
+  ;; TODO: print wheelchair + reviews when connected
+  (println "\n1. Back")
+  (println "0. Exit")
+  (case (read-int "\nChoose an option:" #{0 1})
+    0 (System/exit 0)
+    1 :back))
+
+(defn suggest-places
+  "Suggest 5 places. Optionally filter by types (vector of keywords)."
+  ([] (suggest-places nil))
+  ([types]
+   ;; pick 5 places only once and store in atom
+   ;; --- I have to find an algorithm here to find a place (location, wheelchair and rating) ---
+   (let [places (->> (data/get-all-places)
+                     (filter #(or (nil? types) (some #{(keyword (:amenity_type %))} types)))
+                     shuffle
+                     (take 5)
+                     vec)]
+     (reset! current-places places)  ;; save to atom
+
+     ;; Menu loop
+     (loop []
+       (println "\nHere are 5 suggested places where you can go today:\n")
+       ;; Print column headers with proper alignment
+       (println
+        (format "%-3s %-35s %-12s %-10s %-8s %s"
+                "NR" "Name" "Type" "Distance" "Rating" "Address"))
+       (doseq [[i p] (map-indexed vector @current-places)]
+         (println
+          (format "%-3s %-35s %-12s %-10s %-8s %s"
+                  (str (inc i) ".")          ;; NR
+                  (:name p)                  ;; Name
+                  (or (:amenity_type p) "N/A") ;; Type
+                  (or (:distance p) "N/A")     ;; Distance
+                  (or (:rating p) "N/A")       ;; Rating
+                  (or (get-address-from-coordinates (:lat_coordinate p) (:long_coordinate p)) "N/A"))))   ;; Address
+       (println "0.  Back")
+
+       ;; Ask user choice
+       (let [choice (read-int "\nChoose a place:" (set (range 0 (inc (count @current-places)))))]
+         (if (= choice 0)
+           :back
+           (do
+             ;; show details from current-places
+             (show-place-details (@current-places (dec choice)))
+             (recur))))))))
+
+;; --- Submenus ---
+;; --- Forward declarations ---
+(declare menu-a22 menu-a221)
+
+;; --- Has an idea menu (A1) ---
+(defn menu-a1 []
+  (let [type-map {1 :restaurant
+                  2 :bar
+                  3 :cafe
+                  4 :pub
+                  5 :casino
+                  6 :library
+                  7 :theatre
+                  8 :cinema
+                  9 :nightclub}]
+    (loop []
+      (println "\nGreat! Which type of place are you interested in today?")
+      (println "1. Restaurant")
+      (println "2. Bar")
+      (println "3. Cafe")
+      (println "4. Pub")
+      (println "5. Casino")
+      (println "6. Library")
+      (println "7. Theatre")
+      (println "8. Cinema")
+      (println "9. Nightclub")
+      (println "0. Back")
+
+      (let [choice (read-int "\nSelect an option:" (set (range 10)))]
+        (cond
+          (= choice 0) :back
+          (contains? type-map choice)
+          (do
+            (suggest-places [(type-map choice)])
+            (recur))
+          :else
+          (do
+            (println "Error, please try again.")
+            (recur)))))))
+
+;; --- Lively Submenu (A2212) ---
+(defn menu-a2212 []
+  (loop []
+    (println "\nLet's find some lively place for you!")
+    (println "What kind of experience are you looking for?\n")
+    (println "1. Drinks & Chatting")
+    (println "2. Party & Adrenaline")
+    (println "0. Back")
+    (let [lively-choice (read-int "\nSelect an option:" #{0 1 2})]
+      (cond
+        (= lively-choice 0) (menu-a221) ;; back to quiet/lively menu
+        (= lively-choice 1)
+        (do
+          (suggest-places [:bar :pub])
+          (recur))
+        (= lively-choice 2)
+        (do
+          (suggest-places [:casino :nightclub])
+          (recur))
+        :else
+        (do
+          (println "Error, please try again.")
+          (recur))))))
+
+;; --- Eat/Drink Menu (A221)---
+(defn menu-a221 []
+  (loop []
+    (println "\nEat/Drink it is!")
+    (println "Do you want a quiet place or a lively place?\n")
+    (println "1. Quiet")
+    (println "2. Lively")
+    (println "0. Back")
+    (let [sub-choice (read-int "\nSelect an option:" #{0 1 2})]
+      (cond
+        (= sub-choice 0) (menu-a22)
+        (= sub-choice 1)
+        (do
+          (suggest-places [:restaurant :cafe])
+          (recur))
+        (= sub-choice 2) (menu-a2212)
+        :else
+        (do
+          (println "Error, please try again.")
+          (recur))))))
+
+;; --- Relax/Watch Menu (A222) ---
+(defn menu-a222 []
+  (loop []
+    (suggest-places [:cinema :theatre :library])
+    (recur)))
+
+;; --- Bespoke Suggestion Menu (A22) ---
+(defn menu-a22 []
+  (loop []
+    (println "\nAre you looking for a place to eat/drink or to relax/watch something?")
+    (println "1. Eat/Drink")
+    (println "2. Relax/Watch")
+    (println "0. Back")
+    (let [choice (read-int "\nSelect an option:" #{0 1 2})]
+      (cond
+        (= choice 0) :back
+        (= choice 1) (menu-a221)
+        (= choice 2) (menu-a222)
+        :else
+        (do
+          (println "Error, please try again.")
+          (recur))))))
+
+;; --- No plan menu (A2)
+(defn menu-a2 []
+  (loop []
+    (println "\nThat's okay! What would you prefer?")
+    (println "1. Suggest 5 random places")
+    (println "2. Give bespoke suggestion after couple of questions")
+    (println "0. Back")
+    (case (read-int "\nSelect an option:" #{0 1 2})
+      0 :back
+      1 (do (suggest-places) (recur))
+      2 (do (menu-a22) (recur)))))
+
+;; --- Menu for finding a place (A) ---
 (defn find-place []
-  ;; For simplicity, we'll just show 5 fixed places
-  (println "Here are 5 suggested places:")
-  (doseq [i (range 1 6)] (println i ". Place" i)))
+  (loop []
+    (println "\nDo you already have a type of place in mind for today's outing?")
+    (println "1. Yes")
+    (println "2. No")
+    (println "0. Back")
+    (case (read-int "\nSelect an option:" #{0 1 2})
+      0 :back
+      1 (do (menu-a1) (recur))
+      2 (do (menu-a2) (recur)))))
 
 ;; --- Main menu ---
 (defn main-menu []
   (loop []
-    (println "\nWhat can I do for you today?\n\n1. Find a place\n2. Leave a review\n3. Check history\n4. Edit profile\n0. Exit")
+    (println "\nWhat can I do for you today?\n")
+    (println "1. Find a place")
+    (println "2. Leave a review")
+    (println "3. Check history")
+    (println "4. Edit profile")
+    (println "0. Exit")
     (case (read-int "\nSelect an option:" #{0 1 2 3 4})
       1 (do (find-place) (recur))
       2 (do (leave-review) (recur))
       3 (do (show-history) (recur))
       4 (do (edit-profile) (recur))
-      0 (println "Goodbye!"))))
+      0 (println "\nThanks for using WhereToGo app. Have a nice day! :)"))))
 
 ;; --- Entry point ---
 (defn -main []
