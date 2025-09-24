@@ -6,16 +6,25 @@
 (def db (c/open-database! "data/database"))
 
 ;; THIS WAS USED TO POPULATE PLACES IN DB
-;; Function to transform a single feature into your schema
+;; Function to transform a single feature into schema
 (defn feature->place [feature]
   (let [props  (:properties feature)
         coords (get-in feature [:geometry :coordinates])]
-    {:place_id         (or (:id feature) (get props "@id"))
-     :amenity_type     (:amenity props)
-     :name             (:name props)
-     :lat_coordinate   (second coords)
-     :long_coordinate  (first coords)
-     :wheelchair (:n props)}))
+    {:place_id       (or (:id feature) (get props "@id"))
+     :amenity_type   (:amenity props)
+     :name           (:name props)
+     :lat_coordinate (second coords)
+     :long_coordinate (first coords)
+     :wheelchair     (:n props)
+     :reviews        []       ;; initially empty
+     :avg_rating     0.0}))   ;; initially 0.0
+
+;; Helper to compute average rating of a place
+(defn avg-rating [reviews]
+  (if (empty? reviews)
+    0
+    (/ (reduce + (map :rating reviews))
+       (count reviews))))
 
 ;; Function to load a JSON file and extract places
 (defn load-json-file [file-path]
@@ -23,7 +32,7 @@
     (let [data (json/parse-stream r true)] ;; keywordize keys
       (map feature->place (:features data)))))
 
-;; Load all your JSON files (bar.json, cafe.json, etc.)
+;; Load all JSON files (bar.json, cafe.json, etc.)
 (def files ["data/bar.json"
             "data/cafe.json"
             "data/restaurant.json"
@@ -46,12 +55,41 @@
 (defn get-all-places []
   (c/get-at! db [:places]))
 
-;; Read the places back
-(def loaded-places (c/get-at! db [:places]))
+(defn add-review-to-place! [place-id review]
+  "Adds a review to a place in the DB and updates avg_rating with debug printing."
+  (println "\n--- add-review-to-place! called ---")
+  (println "Place ID:" place-id)
+  (println "Review to add:" review)
+
+  ;; Load all places from DB
+  (let [places (vec (get-all-places))]  ;; ensure vector
+    (println "Loaded" (count places) "places from DB.")
+
+    (let [updated-places
+          (mapv (fn [p]
+                  (if (= (:place_id p) place-id)
+                    (let [updated-reviews (conj (or (:reviews p) []) review)
+                          avg (avg-rating updated-reviews)
+                          updated-place (assoc p
+                                               :reviews updated-reviews
+                                               :avg_rating (/ (Math/round (* avg 10.0)) 10.0))]
+                      (println "Updated place:" (:name p))
+                      (println "New avg_rating:" (:avg_rating updated-place))
+                      updated-place)
+                    p))
+                places)]
+
+      ;; Persist back to the same DB path
+      (println "Persisting updated places back to DB...")
+      (c/assoc-at! db [:places] updated-places)
+      (println "--- add-review-to-place! finished ---\n")
+
+      ;; Return updated places
+      updated-places)))
 
 (defn create-user
   "Add a new user. Throws exception if username exists."
-  [username street-name street-number city country postal-code wheelchair-status]
+  [username street-name street-number city country postal-code wheelchair-status lat lon]
   (c/with-write-transaction [db tx]
     (when (c/get-at tx [:users username])
       (throw (Exception. "Username already exists")))
@@ -61,7 +99,9 @@
                 :city city
                 :country country
                 :postal-code postal-code
-                :wheelchair-status wheelchair-status}]
+                :wheelchair-status wheelchair-status
+                :lat_coordinate lat
+                :long_coordinate lon}]
       (c/assoc-at tx [:users username] user))))
 
 (defn read-user

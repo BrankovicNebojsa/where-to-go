@@ -2,17 +2,55 @@
     (:gen-class)
     (:require [clojure.string :as str]
               [clj-http.client :as client]
-              [cheshire.core :as json]
               [where-to-go.data :as data]))
 
-;; --- Data storage ---
+;; Data storage 
 (def users (atom {})) ;; username -> {:location "N/A", :wheelchair false, :history []} 
 (def places (atom {})) ;; place-name -> [{:username "user1", :rating 4, :comment "Nice"} ...]
 (def current-user (atom nil))
 (def current-places (atom []))
 (def user-agent "MyWhereToGoApp/1.0 (n.brankovic99@gmail.com)")
+(def lambda 0.3)
 
-;; --- Helpers ---
+;; Helpers for random reviews
+(def sample-users ["Miroslav" "NikolaB" "Zoki6" "Pera1" "Nevena11" "Marija K" "Jovana" "Stefke"])
+(def sample-comments ["Amazing!" "Pretty good." "It was okay." "Not great." "Decent." "I know better places."])
+
+(defn random-rating []
+  (-> (rand 4)        ;; random number between 0.0 and 4.0
+      (+ 1)           ;; shift to 1.0 – 5.0
+      (#(Math/round (* % 10))) ;; round to 1 decimal
+      (/ 10.0)))      ;; divide to get float with 1 decimal
+
+(defn random-review []
+  {:username (rand-nth sample-users)
+   :rating   (random-rating)
+   :description (rand-nth sample-comments)})
+
+
+;; This function is only supposed to be called when resetting database
+;; Add random reviews 
+(defn add-random-reviews-to-places! []
+  (println "\n Adding random reviews to all places ")
+  (doseq [[name place] @places]
+    (let [num-reviews (+ 1 (rand-int 3))] ;; 1 to 3 random reviews per place
+      (doseq [_ (range num-reviews)]
+        (let [review (assoc (random-review) :user (:username (random-review))) ;; ensure key is :user
+              current-place (get @places name)
+              all-reviews (conj (or (:reviews current-place) []) review)
+              avg (/ (reduce + (map :rating all-reviews)) (count all-reviews))
+              updated-place (assoc current-place
+                                   :reviews (vec all-reviews)
+                                   :avg_rating (/ (Math/round (* avg 10.0)) 10.0))]
+          ;; Update atom
+          (swap! places assoc name updated-place)
+          ;; Persist each review separately
+          (data/add-review-to-place! (:place_id place) review)
+          (println "Added review to" name "New avg_rating:" (:avg_rating updated-place))))))
+  (println " Done adding random reviews \n"))
+
+
+;; Helpers 
 (defn get-input [prompt]
   (println prompt)
   (print "> ") (flush)
@@ -26,11 +64,6 @@
         n
         (do (println "Invalid input, try again.") (recur))))))
 
-(defn avg-rating [reviews]
-  (if (empty? reviews) 0
-      (/ (reduce + (map :rating reviews)) (count reviews))))
-
-  
 (defn read-boolean [prompt]
   (loop []
     (let [input (str/lower-case (get-input prompt))]
@@ -39,7 +72,50 @@
         (#{"no" "n"} input) false
         :else (do (println "Please enter yes or no.") (recur))))))
 
-;; --- User login / creation ---
+(defn format-address [addr]
+  (str (or (:road addr) "")
+       " " (or (:house_number addr) "")
+       ", " (or (:city addr) "")))
+
+(defn get-address-from-coordinates [lat lon]
+  (let [url "https://nominatim.openstreetmap.org/reverse"
+        params {"format" "json"
+                "lat" (str lat)
+                "lon" (str lon)
+                "zoom" "18"
+                "addressdetails" "1"}
+        response (client/get url
+                             {:headers {"User-Agent" user-agent}
+                              :query-params params
+                              :as :json
+                              :throw-exceptions false})
+        status (:status response)]
+    (if (= 200 status)
+      (let [addr (get-in response [:body :address])]
+        (if addr
+          (format-address addr)
+          (or (get-in response [:body :display_name])
+              "Unknown address")))
+      (do
+        (println "API call failed with status:" status "body:" (:body response))
+        "Unknown address"))))
+
+(defn get-coordinates-from-address [street-name street-number city country postal-code]
+  (let [url "https://nominatim.openstreetmap.org/search"
+        query (str street-name " " street-number ", " city ", " postal-code ", " country)
+        response (client/get url
+                             {:headers {"User-Agent" user-agent}
+                              :query-params {"q" query
+                                             "format" "json"
+                                             "limit" "1"}
+                              :as :json
+                              :throw-exceptions false})]
+    (when (= 200 (:status response))
+      (let [result (first (:body response))]
+        {:lat (Double/parseDouble (:lat result))
+         :lon (Double/parseDouble (:lon result))}))))
+
+;; User login / creation 
 (defn login []
   (let [username (get-input "Enter your username:")
         user (data/read-user username)]
@@ -56,13 +132,16 @@
               city (get-input "\nCity:")
               country (get-input "\nCountry:")
               postal-code (get-input "\nPostal code:")
-              wheelchair-status (read-boolean "\nWheelchair accessible? (yes/no): ")]
-          (data/create-user username street-name street-number city country postal-code wheelchair-status)
+              wheelchair-status (read-boolean "\nWheelchair accessible? (yes/no): ")
+              coords (get-coordinates-from-address street-name street-number city country postal-code)
+              lat (:lat coords)
+              lon (:lon coords)]
+          (data/create-user username street-name street-number city country postal-code wheelchair-status lat lon)
           (reset! current-user (data/read-user username))
           (println "\nYour user has been successfully created"))))))
 
 
-;; --- Profile menu ---
+;; Profile menu 
 (defn edit-profile []
   (println "\nThis is your current profile information:\n")
   (println "Username:" (:username @current-user))
@@ -112,62 +191,57 @@
         (println "Wheelchair status changed to:" new-wheelchair-status))
     0 nil))
 
-
-;; --- Leave review ---
+;; Function that enables user to leave a review for a place
 (defn leave-review []
-(let [place-name (get-input "\nEnter a place name:")
-      rating (read-int "Enter rating (1-5):" #(<= 1 % 5))
-      comment (get-input "Enter comment:")]
-  ;; Update place reviews
-  (swap! places update place-name
-          (fn [reviews] (conj (or reviews []) {:username @current-user
-                                              :rating rating
-                                              :comment comment})))
-  (println "Review saved! Average rating for this place:"
-            (avg-rating (@places place-name)))))
+  (if (empty? @places)
+    (println "No places available to review.")
+    (let [place-name (get-input "\nEnter the name of the place you want to review:")
+          place (some #(when (= (:name %) place-name) %) (vals @places))] ;; find place by name
+      (if (nil? place)
+        (println "Place not found. Make sure you typed the name correctly.")
+        (let [username (:username @current-user)
+              rating (read-int "Enter rating (1-5):" #(<= 1 % 5))
+              comment (get-input "Enter comment:")
+              review {:user username
+                      :rating rating
+                      :description comment}
+              place-id (:place_id place)]
+           
+          ;;  Update in-memory atom 
+          (swap! places update (:name place)
+                 (fn [p]
+                   (let [updated-reviews (conj (or (:reviews p) []) review)
+                         avg (/ (reduce + (map :rating updated-reviews)) (count updated-reviews))]
+                     (assoc p
+                            :reviews updated-reviews
+                            :avg_rating (/ (Math/round (* avg 10.0)) 10.0)))))
+          
+          ;;  Persist to DB 
+          (data/add-review-to-place! place-id review)
+          
+          ;;  Confirmation 
+          (println "Review saved! New average rating for" place-name ":"
+                   (get-in @places [(:name place) :avg_rating])))))))
 
-;; --- History ---
+
+
+;; History 
 (defn show-history []
   (let [history (:history (@users @current-user))]
     (println "Your visited places:")
     (doseq [p history] (println "- " p))))
-
-(defn format-address [addr]
-  (str (or (:road addr) "")
-       " " (or (:house_number addr) "")
-       ", " (or (:city addr) "")))
-
-(defn get-address-from-coordinates [lat lon]
-  (let [url "https://nominatim.openstreetmap.org/reverse"
-        params {"format" "json"
-                "lat" (str lat)
-                "lon" (str lon)
-                "zoom" "18"
-                "addressdetails" "1"}
-        response (client/get url
-                             {:headers {"User-Agent" user-agent}
-                              :query-params params
-                              :as :json
-                              :throw-exceptions false})
-        status (:status response)]
-    (if (= 200 status)
-      (let [addr (get-in response [:body :address])]
-        (if addr
-          (format-address addr)
-          (or (get-in response [:body :display_name])
-              "Unknown address")))
-      (do
-        (println "API call failed with status:" status "body:" (:body response))
-        "Unknown address"))))
-
 
 (defn show-place-details [place]
   (println "\nHere is some more information:")
   (println "Name:" (:name place))
   (println "Type:" (name (:amenity_type place)))
   (println "Distance:" (:distance place))
-  (println "Rating:" (or (:rating place) "N/A"))
-  (println "Address:" (:address place))
+  (println "Rating:" (or (:avg_rating place) "N/A"))
+  (println "Address:" (or (get-address-from-coordinates 
+                           (:lat_coordinate place) 
+                           (:long_coordinate place))
+                          "N/A"))
+
   ;; TODO: print wheelchair + reviews when connected
   (println "\n1. Back")
   (println "0. Exit")
@@ -175,51 +249,91 @@
     0 (System/exit 0)
     1 :back))
 
+(defn distance_calc
+  "Returns distance in km between two lat/lon pairs."
+  [lat1 lon1 lat2 lon2]
+  (let [R 6371.0 ;; Earth radius in km
+        to-rad (fn [deg] (* deg (/ Math/PI 180)))
+        dlat (to-rad (- lat2 lat1))
+        dlon (to-rad (- lon2 lon1))
+        a (+ (Math/pow (Math/sin (/ dlat 2)) 2)
+             (* (Math/cos (to-rad lat1))
+                (Math/cos (to-rad lat2))
+                (Math/pow (Math/sin (/ dlon 2)) 2)))
+        c (* 2 (Math/atan2 (Math/sqrt a) (Math/sqrt (- 1 a))))]
+    (* R c)))
+
+(defn exp-decay-distance [d-km]
+  "Exponential decay function for distance"
+  (Math/exp (* -1 lambda d-km)))
+
+(defn score-place [p user-lat user-lon]
+  "Compute combined score for a place given distance and rating."
+  (let [dist (distance_calc user-lat user-lon
+                            (:lat_coordinate p)
+                            (:long_coordinate p))
+        norm-dist (exp-decay-distance dist)
+        norm-rating (double (or (:avg_rating p) 0))
+        ;; weights: rating more important than distance
+        alpha 0.7   ;; weight for rating
+        beta  0.3   ;; weight for distance
+        score (+ (* alpha norm-rating) (* beta norm-dist))]
+    (assoc p
+           :distance dist
+           :distance-str (format "%.1f km" dist)
+           :score score)))
+
+;; Suggests 5 places based on entered criteria and algorithm that makes a decision on which places
+;; are best for this user. (It uses attributes such as distance to the place and average rating)
 (defn suggest-places
-  "Suggest 5 places. Optionally filter by types (vector of keywords)."
   ([] (suggest-places nil))
   ([types]
-   ;; pick 5 places only once and store in atom
-   ;; --- I have to find an algorithm here to find a place (location, wheelchair and rating) ---
-   (let [places (->> (data/get-all-places)
-                     (filter #(or (nil? types) (some #{(keyword (:amenity_type %))} types)))
-                     shuffle
+   (let [user-lat (:lat_coordinate @current-user)
+         user-lon (:long_coordinate @current-user)
+         places (->> (data/get-all-places)
+                     ;; filter by type if provided
+                     (filter #(or (nil? types)
+                                  (some #{(keyword (:amenity_type %))} types)))
+                     ;; add distance + score
+                     (map #(score-place % user-lat user-lon))
+                     ;; sort by score descending
+                     (sort-by :score >)
                      (take 5)
                      vec)]
-     (reset! current-places places)  ;; save to atom
+     (reset! current-places places)
 
      ;; Menu loop
      (loop []
        (println "\nHere are 5 suggested places where you can go today:\n")
-       ;; Print column headers with proper alignment
        (println
         (format "%-3s %-35s %-12s %-10s %-8s %s"
                 "NR" "Name" "Type" "Distance" "Rating" "Address"))
        (doseq [[i p] (map-indexed vector @current-places)]
          (println
           (format "%-3s %-35s %-12s %-10s %-8s %s"
-                  (str (inc i) ".")          ;; NR
-                  (:name p)                  ;; Name
-                  (or (:amenity_type p) "N/A") ;; Type
-                  (or (:distance p) "N/A")     ;; Distance
-                  (or (:rating p) "N/A")       ;; Rating
-                  (or (get-address-from-coordinates (:lat_coordinate p) (:long_coordinate p)) "N/A"))))   ;; Address
+                  (str (inc i) ".")                     ;; NR
+                  (:name p)                             ;; Name
+                  (or (:amenity_type p) "N/A")          ;; Type
+                  (or (:distance-str p) "N/A")          ;; Distance (1 decimal)
+                  (or (:avg_rating p) "N/A")            ;; Rating
+                  (or (get-address-from-coordinates     ;; Address
+                       (:lat_coordinate p)
+                       (:long_coordinate p))
+                      "N/A"))))
        (println "0.  Back")
 
-       ;; Ask user choice
        (let [choice (read-int "\nChoose a place:" (set (range 0 (inc (count @current-places)))))]
          (if (= choice 0)
            :back
            (do
-             ;; show details from current-places
              (show-place-details (@current-places (dec choice)))
              (recur))))))))
 
-;; --- Submenus ---
-;; --- Forward declarations ---
+;; Submenus 
+;; Forward declarations 
 (declare menu-a22 menu-a221)
 
-;; --- Has an idea menu (A1) ---
+;; Has an idea menu (A1) 
 (defn menu-a1 []
   (let [type-map {1 :restaurant
                   2 :bar
@@ -255,7 +369,7 @@
             (println "Error, please try again.")
             (recur)))))))
 
-;; --- Lively Submenu (A2212) ---
+;; Lively Submenu (A2212) 
 (defn menu-a2212 []
   (loop []
     (println "\nLet's find some lively place for you!")
@@ -265,7 +379,7 @@
     (println "0. Back")
     (let [lively-choice (read-int "\nSelect an option:" #{0 1 2})]
       (cond
-        (= lively-choice 0) (menu-a221) ;; back to quiet/lively menu
+        (= lively-choice 0) :back
         (= lively-choice 1)
         (do
           (suggest-places [:bar :pub])
@@ -279,7 +393,7 @@
           (println "Error, please try again.")
           (recur))))))
 
-;; --- Eat/Drink Menu (A221)---
+;; Eat/Drink Menu (A221)
 (defn menu-a221 []
   (loop []
     (println "\nEat/Drink it is!")
@@ -289,41 +403,50 @@
     (println "0. Back")
     (let [sub-choice (read-int "\nSelect an option:" #{0 1 2})]
       (cond
-        (= sub-choice 0) (menu-a22)
+        (= sub-choice 0) :back
         (= sub-choice 1)
         (do
           (suggest-places [:restaurant :cafe])
           (recur))
-        (= sub-choice 2) (menu-a2212)
+        (= sub-choice 2) 
+        (let [res (menu-a2212)]
+          (if (= res :back) (recur) (recur)))
         :else
         (do
           (println "Error, please try again.")
           (recur))))))
 
-;; --- Relax/Watch Menu (A222) ---
+;; Relax/Watch Menu (A222) 
 (defn menu-a222 []
   (loop []
-    (suggest-places [:cinema :theatre :library])
-    (recur)))
+    (let [result (suggest-places [:cinema :theatre :library])]
+      (if (= result :back)
+        :back   ;; return to previous menu
+        (recur)))))
 
-;; --- Bespoke Suggestion Menu (A22) ---
+;; Bespoke Suggestion Menu (A22) 
 (defn menu-a22 []
   (loop []
     (println "\nAre you looking for a place to eat/drink or to relax/watch something?")
     (println "1. Eat/Drink")
     (println "2. Relax/Watch")
     (println "0. Back")
-    (let [choice (read-int "\nSelect an option:" #{0 1 2})]
-      (cond
-        (= choice 0) :back
-        (= choice 1) (menu-a221)
-        (= choice 2) (menu-a222)
-        :else
-        (do
-          (println "Error, please try again.")
-          (recur))))))
+    (print "\nSelect an option: ")
+    (flush)
+    (let [choice (read-line)]
+      (case choice
+        "1" (let [res (menu-a221)]
+              (if (= res :back)
+                (recur)
+                (recur)))
+        "2" (let [res (menu-a222)]
+              (if (= res :back)
+                (recur)
+                (recur)))
+        "0" :back
+        (do (println "Invalid choice, try again.") (recur))))))
 
-;; --- No plan menu (A2)
+;; No plan menu (A2)
 (defn menu-a2 []
   (loop []
     (println "\nThat's okay! What would you prefer?")
@@ -335,7 +458,7 @@
       1 (do (suggest-places) (recur))
       2 (do (menu-a22) (recur)))))
 
-;; --- Menu for finding a place (A) ---
+;; Menu for finding a place (A) 
 (defn find-place []
   (loop []
     (println "\nDo you already have a type of place in mind for today's outing?")
@@ -347,7 +470,7 @@
       1 (do (menu-a1) (recur))
       2 (do (menu-a2) (recur)))))
 
-;; --- Main menu ---
+;; Main menu 
 (defn main-menu []
   (loop []
     (println "\nWhat can I do for you today?\n")
@@ -363,11 +486,27 @@
       4 (do (edit-profile) (recur))
       0 (println "\nThanks for using WhereToGo app. Have a nice day! :)"))))
 
-;; --- Entry point ---
+;; Entry point 
 (defn -main []
+  ;; ;; Save places if needed
   ;; (data/save-places!)
-  ;; (doseq [p data/loaded-places]
-  ;;   (println p))
+
+  ;; Load all places from DB into the atom
+  (reset! places
+          (->> (data/get-all-places)
+               (map (fn [p] [(:name p) p]))  ;; map name -> place map
+               (into {})))
+
+  ;; ;; Add random reviews before login
+  ;; ;; Only to be done once!
+  ;; (add-random-reviews-to-places!)
+
+  ;; ;; Optional: print loaded places for debugging
+  ;; (doseq [[name place] @places]
+  ;;   (println name ":" place))
+
+  ;; Login user
   (login)
+  ;; Main Menu
   (main-menu))
 
