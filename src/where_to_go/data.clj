@@ -9,15 +9,20 @@
 ;; Function to transform a single feature into schema
 (defn feature->place [feature]
   (let [props  (:properties feature)
-        coords (get-in feature [:geometry :coordinates])]
+        coords (get-in feature [:geometry :coordinates])
+        wheelchair-raw (:wheelchair props) 
+        wheelchair (case wheelchair-raw
+                     "yes" true
+                     "no" false
+                     nil)]  ;; leave nil if not specified
     {:place_id       (or (:id feature) (get props "@id"))
      :amenity_type   (:amenity props)
      :name           (:name props)
      :lat_coordinate (second coords)
      :long_coordinate (first coords)
-     :wheelchair     (:n props)
-     :reviews        []       ;; initially empty
-     :avg_rating     0.0}))   ;; initially 0.0
+     :wheelchair     wheelchair
+     :reviews        []
+     :avg_rating     0.0}))
 
 ;; Helper to compute average rating of a place
 (defn avg-rating [reviews]
@@ -57,14 +62,8 @@
 
 (defn add-review-to-place! [place-id review]
   "Adds a review to a place in the DB and updates avg_rating with debug printing."
-  (println "\n--- add-review-to-place! called ---")
-  (println "Place ID:" place-id)
-  (println "Review to add:" review)
-
   ;; Load all places from DB
   (let [places (vec (get-all-places))]  ;; ensure vector
-    (println "Loaded" (count places) "places from DB.")
-
     (let [updated-places
           (mapv (fn [p]
                   (if (= (:place_id p) place-id)
@@ -73,23 +72,18 @@
                           updated-place (assoc p
                                                :reviews updated-reviews
                                                :avg_rating (/ (Math/round (* avg 10.0)) 10.0))]
-                      (println "Updated place:" (:name p))
-                      (println "New avg_rating:" (:avg_rating updated-place))
                       updated-place)
                     p))
                 places)]
 
       ;; Persist back to the same DB path
-      (println "Persisting updated places back to DB...")
       (c/assoc-at! db [:places] updated-places)
-      (println "--- add-review-to-place! finished ---\n")
-
       ;; Return updated places
       updated-places)))
 
 (defn create-user
   "Add a new user. Throws exception if username exists."
-  [username street-name street-number city country postal-code wheelchair-status lat lon]
+  [username street-name street-number city country postal-code wheelchair lat lon]
   (c/with-write-transaction [db tx]
     (when (c/get-at tx [:users username])
       (throw (Exception. "Username already exists")))
@@ -99,7 +93,7 @@
                 :city city
                 :country country
                 :postal-code postal-code
-                :wheelchair-status wheelchair-status
+                :wheelchair wheelchair
                 :lat_coordinate lat
                 :long_coordinate lon}]
       (c/assoc-at tx [:users username] user))))

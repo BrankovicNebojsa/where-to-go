@@ -243,3 +243,7 @@ Your wheelchair_status has been changed to *new_wheelchair_status*!
 
 I need to add a way to rate places, and do it in such way that user1 can see all the other reviews from different people and not just his/hers (only the average rating)
 
+chcp 65001
+
+
+Instead of doing score-place again after detailed view I should just show current-places and empty it after leaving the function

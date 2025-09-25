@@ -5,7 +5,6 @@
               [where-to-go.data :as data]))
 
 ;; Data storage 
-(def users (atom {})) ;; username -> {:location "N/A", :wheelchair false, :history []} 
 (def places (atom {})) ;; place-name -> [{:username "user1", :rating 4, :comment "Nice"} ...]
 (def current-user (atom nil))
 (def current-places (atom []))
@@ -35,7 +34,7 @@
   (doseq [[name place] @places]
     (let [num-reviews (+ 1 (rand-int 3))] ;; 1 to 3 random reviews per place
       (doseq [_ (range num-reviews)]
-        (let [review (assoc (random-review) :user (:username (random-review))) ;; ensure key is :user
+        (let [review (random-review)                  ;; just one call
               current-place (get @places name)
               all-reviews (conj (or (:reviews current-place) []) review)
               avg (/ (reduce + (map :rating all-reviews)) (count all-reviews))
@@ -60,6 +59,14 @@
   (loop []
     (let [input (get-input prompt)
           n (try (Integer/parseInt input) (catch Exception _ nil))]
+      (if (and n (valid? n))
+        n
+        (do (println "Invalid input, try again.") (recur))))))
+
+(defn read-double [prompt valid?]
+  (loop []
+    (let [input (get-input prompt)
+          n (try (Double/parseDouble input) (catch Exception _ nil))]
       (if (and n (valid? n))
         n
         (do (println "Invalid input, try again.") (recur))))))
@@ -125,18 +132,18 @@
         (println "Welcome back," (:username user)))
       ;; user not found, create new
       (do
-        (println "This is your first time using WhereToGo. 
-                  Please enter your data so we can find the best place for you.")
+        (println "This is your first time using WhereToGo.") 
+        (println "Please enter your data so we can find the best place for you.")
         (let [street-name (get-input "\nStreet name:")
               street-number (read-int "\nStreet number:" pos?)
               city (get-input "\nCity:")
               country (get-input "\nCountry:")
               postal-code (get-input "\nPostal code:")
-              wheelchair-status (read-boolean "\nWheelchair accessible? (yes/no): ")
+              wheelchair (read-boolean "\nWheelchair accessible? (yes/no): ")
               coords (get-coordinates-from-address street-name street-number city country postal-code)
               lat (:lat coords)
               lon (:lon coords)]
-          (data/create-user username street-name street-number city country postal-code wheelchair-status lat lon)
+          (data/create-user username street-name street-number city country postal-code wheelchair lat lon)
           (reset! current-user (data/read-user username))
           (println "\nYour user has been successfully created"))))))
 
@@ -151,7 +158,7 @@
   (println "Postal code:" (:postal-code @current-user))
   (println "Country:" (:country @current-user))
   (println "Wheelchair status:"
-          (case (:wheelchair-status @current-user)
+          (case (:wheelchair @current-user)
             true "Yes"
             false "No"
             "N/A"))
@@ -185,10 +192,10 @@
         (data/update-user (:username @current-user) {:country new-country})
         (swap! current-user assoc :country new-country)
         (println "Country changed to:" new-country))
-    6 (let [new-wheelchair-status (read-boolean "\nIs the user wheelchair accessible? (yes/no)")]
-        (data/update-user (:username @current-user) {:wheelchair-status new-wheelchair-status})
-        (swap! current-user assoc :wheelchair-status new-wheelchair-status)
-        (println "Wheelchair status changed to:" new-wheelchair-status))
+    6 (let [new-wheelchair (read-boolean "\nIs the user wheelchair accessible? (yes/no)")]
+        (data/update-user (:username @current-user) {:wheelchair new-wheelchair})
+        (swap! current-user assoc :wheelchair new-wheelchair)
+        (println "Wheelchair status changed to:" new-wheelchair))
     0 nil))
 
 ;; Function that enables user to leave a review for a place
@@ -200,9 +207,9 @@
       (if (nil? place)
         (println "Place not found. Make sure you typed the name correctly.")
         (let [username (:username @current-user)
-              rating (read-int "Enter rating (1-5):" #(<= 1 % 5))
+              rating (read-double "Enter rating (1-5):" #(<= 1 % 5))
               comment (get-input "Enter comment:")
-              review {:user username
+              review {:username username
                       :rating rating
                       :description comment}
               place-id (:place_id place)]
@@ -225,24 +232,53 @@
 
 
 
-;; History 
-(defn show-history []
-  (let [history (:history (@users @current-user))]
-    (println "Your visited places:")
-    (doseq [p history] (println "- " p))))
+;; Shows All Reviews of Current User 
+(defn review-history []
+  (let [current-username (:username @current-user)
+        user-places (filter
+                     (fn [place]
+                       (some (fn [r] (= (:username r) current-username))
+                             (:reviews place)))
+                     (vals @places))]
+    (if (empty? user-places)
+      (println "\nYou haven't left any reviews yet.")
+      (do
+        (println "\nYour reviews:\n")
+        (doseq [place user-places]
+          (let [user-reviews (filter
+                              (fn [r] (= (:username r) current-username))
+                              (:reviews place))]
+            (println "Place:" (:name place))
+            (println "Type:" (name (:amenity_type place)))
+            (doseq [r user-reviews]
+              (println "Rating:" (:rating r))
+              (println "Comment:" (:description r))
+              (println))))))))
 
+
+;; Gives a detailed preview of a place including reviews
 (defn show-place-details [place]
   (println "\nHere is some more information:")
   (println "Name:" (:name place))
   (println "Type:" (name (:amenity_type place)))
-  (println "Distance:" (:distance place))
+  (println "Distance:" (:distance-str place))
   (println "Rating:" (or (:avg_rating place) "N/A"))
-  (println "Address:" (or (get-address-from-coordinates 
-                           (:lat_coordinate place) 
+  (println "Wheelchair:" (case (:wheelchair place)
+                           true "Yes"
+                           false "No"
+                           "N/A"))
+  (println "Address:" (or (get-address-from-coordinates
+                           (:lat_coordinate place)
                            (:long_coordinate place))
                           "N/A"))
-
-  ;; TODO: print wheelchair + reviews when connected
+  (println "\nReviews:")
+  (if-let [reviews (:reviews place)]
+    (doseq [r reviews]
+      (println (format "- %s (Rating: %.1f) - %s"
+                       (:username r)
+                       (:rating r)
+                       (:description r))))
+    (println "No reviews yet."))
   (println "\n1. Back")
   (println "0. Exit")
   (case (read-int "\nChoose an option:" #{0 1})
@@ -264,20 +300,34 @@
     (* R c)))
 
 (defn exp-decay-distance [d-km]
-  "Exponential decay function for distance"
   (Math/exp (* -1 lambda d-km)))
 
 (defn score-place [p user-lat user-lon]
-  "Compute combined score for a place given distance and rating."
   (let [dist (distance_calc user-lat user-lon
                             (:lat_coordinate p)
                             (:long_coordinate p))
         norm-dist (exp-decay-distance dist)
         norm-rating (double (or (:avg_rating p) 0))
-        ;; weights: rating more important than distance
-        alpha 0.7   ;; weight for rating
-        beta  0.3   ;; weight for distance
-        score (+ (* alpha norm-rating) (* beta norm-dist))]
+
+        ;; wheelchair preference
+        needs-wheelchair (:wheelchair @current-user)
+        wheelchair-score (cond
+                           ;; user requires wheelchair but place explicitly says no → strong penalty
+                           (and needs-wheelchair (= false (:wheelchair p))) -10
+                           ;; user requires wheelchair and place is yes → bonus
+                           (and needs-wheelchair (= true (:wheelchair p))) 2
+                           ;; user requires wheelchair but unknown → small penalty
+                           (and needs-wheelchair (nil? (:wheelchair p))) -1
+                           ;; user doesn’t care → neutral
+                           :else 0)
+
+        ;; weights
+        alpha 0.7   ;; rating weight
+        beta  0.3   ;; distance weight
+
+        score (+ (* alpha norm-rating)
+                 (* beta norm-dist)
+                 wheelchair-score)]
     (assoc p
            :distance dist
            :distance-str (format "%.1f km" dist)
@@ -286,48 +336,78 @@
 ;; Suggests 5 places based on entered criteria and algorithm that makes a decision on which places
 ;; are best for this user. (It uses attributes such as distance to the place and average rating)
 (defn suggest-places
-  ([] (suggest-places nil))
-  ([types]
-   (let [user-lat (:lat_coordinate @current-user)
-         user-lon (:long_coordinate @current-user)
-         places (->> (data/get-all-places)
-                     ;; filter by type if provided
-                     (filter #(or (nil? types)
-                                  (some #{(keyword (:amenity_type %))} types)))
-                     ;; add distance + score
-                     (map #(score-place % user-lat user-lon))
-                     ;; sort by score descending
-                     (sort-by :score >)
-                     (take 5)
-                     vec)]
-     (reset! current-places places)
+   ([] (suggest-places nil))
+   ([types]
+    (let [user-lat (:lat_coordinate @current-user)
+          user-lon (:long_coordinate @current-user)
+          needs-wheelchair (:wheelchair @current-user)
 
-     ;; Menu loop
-     (loop []
-       (println "\nHere are 5 suggested places where you can go today:\n")
-       (println
-        (format "%-3s %-35s %-12s %-10s %-8s %s"
-                "NR" "Name" "Type" "Distance" "Rating" "Address"))
-       (doseq [[i p] (map-indexed vector @current-places)]
-         (println
-          (format "%-3s %-35s %-12s %-10s %-8s %s"
-                  (str (inc i) ".")                     ;; NR
-                  (:name p)                             ;; Name
-                  (or (:amenity_type p) "N/A")          ;; Type
-                  (or (:distance-str p) "N/A")          ;; Distance (1 decimal)
-                  (or (:avg_rating p) "N/A")            ;; Rating
-                  (or (get-address-from-coordinates     ;; Address
-                       (:lat_coordinate p)
-                       (:long_coordinate p))
-                      "N/A"))))
-       (println "0.  Back")
+          places (->> (data/get-all-places)
+                      ;; filter by type if provided
+                      (filter #(or (nil? types)
+                                   (some #{(keyword (:amenity_type %))} types)))
+                      ;; filter wheelchair if required
+                      (filter #(or (not needs-wheelchair)
+                                   (not= false (:wheelchair %))))
+                      ;; add distance + score
+                      (map #(score-place % user-lat user-lon))
+                      ;; sort by score descending
+                      (sort-by :score >)
+                      (take 5)
+                      vec)]
+      (reset! current-places places)
 
-       (let [choice (read-int "\nChoose a place:" (set (range 0 (inc (count @current-places)))))]
-         (if (= choice 0)
-           :back
-           (do
-             (show-place-details (@current-places (dec choice)))
-             (recur))))))))
+      ;; Menu loop
+      (loop []
+        (println "\nHere are 5 suggested places where you can go today:\n")
+
+        ;; Header
+        (if needs-wheelchair
+          (println
+           (format "%-3s %-35s %-12s %-10s %-8s %-12s %s"
+                   "NR" "Name" "Type" "Distance" "Rating" "Wheelchair" "Address"))
+          (println
+           (format "%-3s %-35s %-12s %-10s %-8s %s"
+                   "NR" "Name" "Type" "Distance" "Rating" "Address")))
+
+        ;; Rows
+        (doseq [[i p] (map-indexed vector @current-places)]
+          (if needs-wheelchair
+            (println
+             (format "%-3s %-35s %-12s %-10s %-8s %-12s %s"
+                     (str (inc i) ".")
+                     (:name p)
+                     (or (:amenity_type p) "N/A")
+                     (or (:distance-str p) "N/A")
+                     (or (:avg_rating p) "N/A")
+                     (case (:wheelchair p)
+                       true  "Yes"
+                       false "No"
+                       "N/A")
+                     (or (get-address-from-coordinates
+                          (:lat_coordinate p)
+                          (:long_coordinate p))
+                         "N/A")))
+            (println
+             (format "%-3s %-35s %-12s %-10s %-8s %s"
+                     (str (inc i) ".")
+                     (:name p)
+                     (or (:amenity_type p) "N/A")
+                     (or (:distance-str p) "N/A")
+                     (or (:avg_rating p) "N/A")
+                     (or (get-address-from-coordinates
+                          (:lat_coordinate p)
+                          (:long_coordinate p))
+                         "N/A")))))
+
+      (println "0.  Back")
+
+      (let [choice (read-int "\nChoose a place:" (set (range 0 (inc (count @current-places)))))]
+        (if (= choice 0)
+          :back
+          (do
+            (show-place-details (@current-places (dec choice)))
+            (recur))))))))
 
 ;; Submenus 
 ;; Forward declarations 
@@ -482,7 +562,7 @@
     (case (read-int "\nSelect an option:" #{0 1 2 3 4})
       1 (do (find-place) (recur))
       2 (do (leave-review) (recur))
-      3 (do (show-history) (recur))
+      3 (do (review-history) (recur))
       4 (do (edit-profile) (recur))
       0 (println "\nThanks for using WhereToGo app. Have a nice day! :)"))))
 
@@ -509,4 +589,3 @@
   (login)
   ;; Main Menu
   (main-menu))
-
