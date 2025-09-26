@@ -26,8 +26,10 @@ It uses real location data from Belgrade (fetched via **Overpass Turbo** and sto
     cd where-to-go
 3. Set the terminal to UTF-8 encoding (required for displaying Serbian characters correctly).
 On Windows, run:
+    ```bash
     chcp 65001
 
 On Linux/macOS, UTF-8 is usually the default.
 4. Run the application:
+    ```bash
     lein run
