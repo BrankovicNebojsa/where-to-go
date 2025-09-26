@@ -37,7 +37,7 @@
     (let [data (json/parse-stream r true)] ;; keywordize keys
       (map feature->place (:features data)))))
 
-;; Load all JSON files (bar.json, cafe.json, etc.)
+;; Load all dataset JSON files
 (def files ["data/bar.json"
             "data/cafe.json"
             "data/restaurant.json"
@@ -61,7 +61,6 @@
   (c/get-at! db [:places]))
 
 (defn add-review-to-place! [place-id review]
-  "Adds a review to a place in the DB and updates avg_rating with debug printing."
   ;; Load all places from DB
   (let [places (vec (get-all-places))]  ;; ensure vector
     (let [updated-places
@@ -112,10 +111,3 @@
       (when-not existing
         (throw (Exception. "User not found")))
       (c/merge-at tx [:users username] updates))))
-
-(defn delete-user
-  "Remove a user by username."
-  [username]
-  (c/with-write-transaction [db tx]
-    (when-let [existing (c/get-at tx [:users username])]
-      (c/dissoc-at tx [:users username]))))

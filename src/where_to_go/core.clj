@@ -201,14 +201,14 @@
 ;; Function that enables user to leave a review for a place
 (defn leave-review []
   (if (empty? @places)
-    (println "No places available to review.")
+    (println "\nNo places available to review.")
     (let [place-name (get-input "\nEnter the name of the place you want to review:")
           place (some #(when (= (:name %) place-name) %) (vals @places))] ;; find place by name
       (if (nil? place)
-        (println "Place not found. Make sure you typed the name correctly.")
+        (println "\nPlace not found. Make sure you typed the name correctly.")
         (let [username (:username @current-user)
-              rating (read-double "Enter rating (1-5):" #(<= 1 % 5))
-              comment (get-input "Enter comment:")
+              rating (read-double "\nEnter rating (1-5):" #(<= 1 % 5))
+              comment (get-input "\nEnter comment:")
               review {:username username
                       :rating rating
                       :description comment}
@@ -227,7 +227,7 @@
           (data/add-review-to-place! place-id review)
           
           ;;  Confirmation 
-          (println "Review saved! New average rating for" place-name ":"
+          (println "\nReview saved! New average rating for" place-name ":"
                    (get-in @places [(:name place) :avg_rating])))))))
 
 
